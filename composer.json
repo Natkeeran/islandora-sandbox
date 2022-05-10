@@ -296,7 +296,10 @@
         "islandora_lite/islandora_lite_solr_search": "dev-main",
         "mjordan/islandora_workbench_integration": "dev-main",
         "drupal/jquery_ui_slider": "^1.1",
-        "drupal/jquery_ui_touch_punch": "^1.0"
+        "drupal/jquery_ui_touch_punch": "^1.0",
+        "drupal/structure_sync":"^2.0",
+        "digitalutsc/drupal_hero_banner":"dev-main",
+        "digitalutsc/bootstrap_slideshow":"dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
