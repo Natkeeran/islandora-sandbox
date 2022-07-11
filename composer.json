@@ -252,7 +252,7 @@
         "drupal/rest_oai_pmh": "^2.0@beta",
         "drupal/transliterate_filenames":"^2.0",
         "drupal/restui": "^1.20",
-        "drupal/search_api_solr": "^4.1",
+        "drupal/search_api_solr": "4.2.7",
         "drupal/views_bulk_edit": "^2.6",
         "drupal/views_bulk_operations": "^4.0",
         "drupal/views_slideshow": "^4.8",
