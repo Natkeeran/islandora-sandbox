@@ -1,0 +1,19 @@
+uuid: 9600a6bc-613b-4a07-9692-e5a59c72f871
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_ableplayer_media_caption
+field_name: field_ableplayer_media_caption
+entity_type: media
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

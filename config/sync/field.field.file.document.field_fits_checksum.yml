@@ -1,0 +1,21 @@
+uuid: 97d141f3-7a38-43af-bf52-cfc8ac7df680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_checksum
+    - file_entity.type.document
+_core:
+  default_config_hash: GlW5eWTjyTmrNwXNDBYfCdYKd8ie8jxIDLWgDLlGjQs
+id: file.document.field_fits_checksum
+field_name: field_fits_checksum
+entity_type: file
+bundle: document
+label: 'Fits Checksum'
+description: '[{fileinfo.md5checksum}]'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

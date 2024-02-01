@@ -1,0 +1,12 @@
+uuid: b4ff7631-442c-4621-8cb2-e84109c56403
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: vbBvbSULb7aASwYe8sCXlGxKENnmNScJqWf1BWZ1AQg
+id: node.remote_video_viewer
+label: 'Remote Video Viewer'
+targetEntityType: node
+cache: true

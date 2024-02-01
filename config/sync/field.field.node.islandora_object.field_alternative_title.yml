@@ -1,12 +1,13 @@
-uuid: 35c24594-df52-41b6-a8b6-5b08c9261711
+uuid: 6ae57a72-a022-4189-a22b-e6705b49b8f1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_alternative_title
     - node.type.islandora_object
+  enforced: {  }
 _core:
-  default_config_hash: 04jTMtIqG_6IuazZAe1JH0IR2hvhNbQFyzXShLRwQHg
+  default_config_hash: dx9dxvmxaarmk3facs_9uFZx4UlZeIkmGF0VJygo9zg
 id: node.islandora_object.field_alternative_title
 field_name: field_alternative_title
 entity_type: node

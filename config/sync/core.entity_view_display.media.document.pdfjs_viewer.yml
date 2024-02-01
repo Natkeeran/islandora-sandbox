@@ -1,0 +1,42 @@
+uuid: 14e3de16-4877-4d1b-bc53-1ffa961d1f1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.pdfjs_viewer
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_media_use
+    - media.type.document
+  module:
+    - pdf
+  enforced: {  }
+_core:
+  default_config_hash: KJb0EoGNqcYuJvlwkQNb2gxK9v6Vwl7XZdQNrESu_A0
+id: media.document.pdfjs_viewer
+targetEntityType: media
+bundle: document
+mode: pdfjs_viewer
+content:
+  field_media_document:
+    type: pdf_default
+    label: visually_hidden
+    settings:
+      custom_zoom: ''
+      height: 500px
+      keep_pdfjs: '1'
+      page: ''
+      pagemode: ''
+      width: 100%
+      zoom: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

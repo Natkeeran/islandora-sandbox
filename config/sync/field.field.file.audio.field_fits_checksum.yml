@@ -1,0 +1,21 @@
+uuid: 87a4fb04-98f8-4547-8616-724142592481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_checksum
+    - file_entity.type.audio
+_core:
+  default_config_hash: xu9nROLbdztNx81DZi9h3DtwOtLE3DsTmdt1yMx4IUo
+id: file.audio.field_fits_checksum
+field_name: field_fits_checksum
+entity_type: file
+bundle: audio
+label: 'Fits Checksum'
+description: '[{fileinfo.md5checksum}]'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

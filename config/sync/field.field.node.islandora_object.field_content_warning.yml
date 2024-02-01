@@ -1,0 +1,21 @@
+uuid: 455a9acb-59a6-40e9-b87d-ec114fc38c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_warning
+    - node.type.islandora_object
+_core:
+  default_config_hash: HrTORZVPmuYYDKtEWMQExu-_42rKm7OjU2PrCEAHKJw
+id: node.islandora_object.field_content_warning
+field_name: field_content_warning
+entity_type: node
+bundle: islandora_object
+label: 'Content Warning'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

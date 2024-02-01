@@ -1,0 +1,31 @@
+uuid: 18edd0d0-079d-48e0-9c95-2d097668d9c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internet_media_type
+    - node.type.islandora_object
+    - taxonomy.vocabulary.internet_media_type
+_core:
+  default_config_hash: 9p8MWJnNPjAplDsG_Umc6U2cNdr3XiA13C8gK6I7T4U
+id: node.islandora_object.field_internet_media_type
+field_name: field_internet_media_type
+entity_type: node
+bundle: islandora_object
+label: 'Internet Media Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      internet_media_type: internet_media_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

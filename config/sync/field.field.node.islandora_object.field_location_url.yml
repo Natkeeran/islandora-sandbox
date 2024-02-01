@@ -1,0 +1,25 @@
+uuid: a1701569-72d8-4844-bca6-4356e1e417d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_url
+    - node.type.islandora_object
+  module:
+    - link
+_core:
+  default_config_hash: iV5wfo_h2_dOPtwP6QOG84QBG-s48ZrOx3vL4kRu1_k
+id: node.islandora_object.field_location_url
+field_name: field_location_url
+entity_type: node
+bundle: islandora_object
+label: 'Location URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

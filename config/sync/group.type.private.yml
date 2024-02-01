@@ -1,0 +1,12 @@
+uuid: a0bc6e5a-34c4-492f-8efc-09c4cf01849a
+langcode: en
+status: true
+dependencies: {  }
+id: private
+label: Private
+description: 'This group type is meant for groups which have access control applied for them. '
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - private-admin

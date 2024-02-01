@@ -1,0 +1,19 @@
+uuid: b9614186-56df-407a-8fe0-df795678b0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_file_format
+    - file_entity.type.file
+id: file.file.field_fits_file_format
+field_name: field_fits_file_format
+entity_type: file
+bundle: file
+label: 'Fits File Format'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

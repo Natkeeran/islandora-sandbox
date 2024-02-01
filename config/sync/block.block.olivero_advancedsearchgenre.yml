@@ -1,0 +1,49 @@
+uuid: 61a67ea9-48ce-4688-a736-821ea399d3ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.advanced_search_genre
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: olivero_advancedsearchgenre
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:advanced_search_genre'
+settings:
+  id: 'facet_block:advanced_search_genre'
+  label: 'AdvancedSearch: Genre'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_advancedsearchgenre
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-advanced_search-page_1: view-advanced_search-page_1
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

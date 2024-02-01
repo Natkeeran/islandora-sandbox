@@ -1,0 +1,41 @@
+uuid: 27395a20-5cfe-4428-9d57-8d2423e9cd35
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.thumbnail
+    - field.field.file.audio.field_fits
+    - field.field.file.audio.field_fits_checksum
+    - field.field.file.audio.field_fits_file_format
+    - field.field.file.audio.field_fits_file_size
+    - field.field.file.audio.field_fits_mimetype
+    - field.field.file.audio.field_fits_pronom_puid
+    - file_entity.type.audio
+_core:
+  default_config_hash: 3JiAy0mwynmWPj9NTujj1zJk81Eq8lnG5DAOGrgM5u0
+id: file.audio.thumbnail
+targetEntityType: file
+bundle: audio
+mode: thumbnail
+content:
+  filename:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_fits: true
+  field_fits_checksum: true
+  field_fits_file_format: true
+  field_fits_file_size: true
+  field_fits_mimetype: true
+  field_fits_pronom_puid: true
+  filemime: true
+  filesize: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true
+  uri: true

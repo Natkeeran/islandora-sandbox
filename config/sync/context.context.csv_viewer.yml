@@ -1,0 +1,49 @@
+uuid: 8830c4e2-6bc5-47e9-9b55-19109361d36a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'CSV Viewer'
+name: csv_viewer
+group: Display
+description: 'Displays the Service File or Original File in CSV view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'https://www.drupal.org/project/csvfile_formatter'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      2226557c-fa64-40d2-a212-32a897fb7374:
+        uuid: 2226557c-fa64-40d2-a212-32a897fb7374
+        id: 'views_block:media_display-csv'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_csv
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: csv_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

@@ -1,0 +1,36 @@
+uuid: 246c41fa-80d6-4559-8755-b0d4d738f1e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+id: style_collections_view
+label: 'Style Collections View'
+code: |-
+  .views-field-thumbnail__target-id img { 
+    min-width: 200px !important;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .views-field-thumbnail__target-id img { 
+       min-width: 100px !important;
+    }
+  }
+media: all
+preprocess: true
+conditions:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-collections-page_1: view-collections-page_1
+contexts: {  }
+conditions_require_all: true

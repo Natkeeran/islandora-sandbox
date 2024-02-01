@@ -1,4 +1,4 @@
-uuid: 6d4304c3-dde1-41b2-bae4-d886ae2c27b4
+uuid: 764c5510-8eec-4fb3-8444-4fc5052941c4
 langcode: en
 status: true
 dependencies:
@@ -19,20 +19,20 @@ content:
   description:
     type: text_textfield
     weight: 121
+    region: content
     settings:
+      placeholder: ''
       rows: 9
       summary_rows: 3
-      placeholder: ''
     third_party_settings: {  }
-    region: content
   field_authority_link:
+    type: authority_link_default
     weight: 123
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: authority_link_default
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -56,14 +56,14 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

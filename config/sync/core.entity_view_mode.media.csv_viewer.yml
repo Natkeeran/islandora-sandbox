@@ -1,0 +1,12 @@
+uuid: 59f10fa7-b1be-4935-9c38-880c23d9bb26
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: aW84-XraTMHsJvs-cXd9mmlSyLQjO878FXWxiVAO4MI
+id: media.csv_viewer
+label: 'CSV Viewer'
+targetEntityType: media
+cache: true

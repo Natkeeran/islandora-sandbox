@@ -1,0 +1,21 @@
+uuid: 479c6937-206a-4b60-ac25-3a6deffa4e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_height
+    - file_entity.type.image
+_core:
+  default_config_hash: SdUhoHMTjg3QbhKnkBeghntiswWuz_Zi7E3C1ox241A
+id: file.image.field_fits_height
+field_name: field_fits_height
+entity_type: file
+bundle: image
+label: 'Fits Height'
+description: '[{metadata.image.imageHeight}]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

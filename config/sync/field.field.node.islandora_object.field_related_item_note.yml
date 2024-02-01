@@ -1,0 +1,21 @@
+uuid: 2e2904d1-e260-4547-8447-7c7d5c48191a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_item_note
+    - node.type.islandora_object
+_core:
+  default_config_hash: O1YqSOKw1rP_I_jjW0pv0fQny1SSAA0GlwEzfulP9ME
+id: node.islandora_object.field_related_item_note
+field_name: field_related_item_note
+entity_type: node
+bundle: islandora_object
+label: 'Related Item Note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

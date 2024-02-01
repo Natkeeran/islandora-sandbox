@@ -1,4 +1,4 @@
-uuid: 5262a179-2f84-4ef5-80b3-f0fbd3cb4cd8
+uuid: f0a67d27-38b1-4809-9beb-30b5a7bb8d87
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - taxonomy
 _core:
-  default_config_hash: 7dhQX-FT16CcrLdhBdu0zaKOz0WYJlp_2jhiu_ZeeQU
+  default_config_hash: 3WGvlX2CdD-Ul3QsGMJ1X9gbKrSeQIbaPYOZpuyKiF8
 id: taxonomy_term.subject
 targetEntityType: taxonomy_term
 bundle: subject

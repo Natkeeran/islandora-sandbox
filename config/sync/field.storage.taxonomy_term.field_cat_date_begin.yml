@@ -1,8 +1,9 @@
-uuid: 3a9f2a08-7983-40af-b5f7-31a6131a98ba
+uuid: 4fb8db5f-baa0-4a13-a8a9-820f53008112
 langcode: en
 status: true
 dependencies:
   module:
+    - controlled_access_terms
     - taxonomy
 _core:
   default_config_hash: QCGvpHzgk8O9UZewTv1kU8_rU3eSsvL9HiRzgL4t6zc
@@ -12,9 +13,9 @@ entity_type: taxonomy_term
 type: edtf
 settings:
   max_length: 60
-  is_ascii: false
   case_sensitive: false
-module: core
+  is_ascii: false
+module: controlled_access_terms
 locked: false
 cardinality: 1
 translatable: true

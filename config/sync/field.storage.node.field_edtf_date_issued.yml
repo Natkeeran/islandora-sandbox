@@ -1,20 +1,22 @@
-uuid: 08ab619e-aeba-4d95-a97a-757f3881a28c
+uuid: 9204ac0a-b99e-4778-9bd6-1609b8095f46
 langcode: en
 status: true
 dependencies:
   module:
+    - controlled_access_terms
     - node
+  enforced: {  }
 _core:
-  default_config_hash: ritH1OPE0hTgDD73edW6V2e7JjZ5bT5LMbwHQHqWfWs
+  default_config_hash: 9FRjoaJ6qe5HJJbS2-F_9wdRQjzkUYO1JAVLbXXrPog
 id: node.field_edtf_date_issued
 field_name: field_edtf_date_issued
 entity_type: node
 type: edtf
 settings:
   max_length: 128
-  is_ascii: false
   case_sensitive: false
-module: core
+  is_ascii: false
+module: controlled_access_terms
 locked: false
 cardinality: -1
 translatable: true

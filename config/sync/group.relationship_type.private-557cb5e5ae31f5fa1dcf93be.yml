@@ -1,0 +1,18 @@
+uuid: 35e7fde3-26ee-405e-96b1-fe2a056f200a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - media.type.able_player_caption
+  module:
+    - groupmedia
+    - media
+id: private-557cb5e5ae31f5fa1dcf93be
+group_type: private
+content_plugin: 'group_media:able_player_caption'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true
+  tracking_enabled: 1

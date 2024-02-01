@@ -1,11 +1,13 @@
-uuid: 8a243ec5-3fed-4184-80b6-3a5d569459d3
+uuid: 59d6a222-474f-419b-b835-385aff480790
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_physical_form
     - node.type.islandora_object
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.physical_form
+_core:
+  default_config_hash: x5gwAhLmbaxEUV1ywDrWpCEX5FnabCjq-krkoSiQXkg
 id: node.islandora_object.field_physical_form
 field_name: field_physical_form
 entity_type: node
@@ -20,7 +22,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      physical_form: physical_form
     sort:
       field: name
       direction: asc

@@ -1,0 +1,35 @@
+uuid: 372b3179-e140-4a0d-8ec8-0c172d1c8b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.service_file_view
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_media_use
+    - media.type.document
+  module:
+    - file
+_core:
+  default_config_hash: RoI_Rk8HjZ78kdmEApOJ6vgHB2vhvBc5BiPMLmU8FYY
+id: media.document.service_file_view
+targetEntityType: media
+bundle: document
+mode: service_file_view
+content:
+  field_media_document:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

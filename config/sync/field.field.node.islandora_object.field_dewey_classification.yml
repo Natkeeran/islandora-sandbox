@@ -1,10 +1,12 @@
-uuid: 854a8e5d-15da-425b-a020-0c79aa91b179
+uuid: 0a083056-57fb-4750-8499-0f445a2c5a6f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_dewey_classification
     - node.type.islandora_object
+_core:
+  default_config_hash: Ftlt8RnvkLCbQs8VnyGf29AVc7tAow-i-UtKcEnbb9k
 id: node.islandora_object.field_dewey_classification
 field_name: field_dewey_classification
 entity_type: node

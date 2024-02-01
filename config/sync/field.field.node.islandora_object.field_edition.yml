@@ -1,10 +1,12 @@
-uuid: 6409ea14-7112-4900-9671-c88f1f6490da
+uuid: 4db81380-550e-44bc-9889-c9e93912e348
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_edition
     - node.type.islandora_object
+_core:
+  default_config_hash: jK9w-N5rarMQkj5u7Kq6mmxlM1wBJ-RgnsKzD_VA0Hc
 id: node.islandora_object.field_edition
 field_name: field_edition
 entity_type: node

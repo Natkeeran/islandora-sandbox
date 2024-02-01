@@ -1,0 +1,25 @@
+uuid: 298c496a-93ed-4453-af8b-5fcd932c65ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volume
+    - node.type.islandora_object
+_core:
+  default_config_hash: BuAHT9-YYm22kWbNOEpBFWZ8jMndAaQ5M1iLl0R3NiM
+id: node.islandora_object.field_volume
+field_name: field_volume
+entity_type: node
+bundle: islandora_object
+label: Volume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

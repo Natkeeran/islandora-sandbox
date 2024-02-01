@@ -1,4 +1,4 @@
-uuid: e6802fcb-6cfc-46ca-b55e-bf9f6166d6c9
+uuid: e772e548-c317-45df-aaed-4a9a53cef72e
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,12 @@ dependencies:
     - field_permissions
     - node
     - taxonomy
+  enforced: {  }
 third_party_settings:
   field_permissions:
     permission_type: public
+_core:
+  default_config_hash: QUf_TltJB_i-8BRVsYIAfjgZ72dKw4FeUYrDaYRHoLQ
 id: node.field_subjects_name
 field_name: field_subjects_name
 entity_type: node

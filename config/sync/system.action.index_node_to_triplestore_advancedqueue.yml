@@ -1,0 +1,13 @@
+uuid: 5baf2388-455d-48e6-afc2-817fcaaddfb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - triplestore_indexer
+_core:
+  default_config_hash: _Fwt3UMmnXcDuHsM8uiMKNQt2f2gEJtnLijFgSi1CdI
+id: index_node_to_triplestore_advancedqueue
+label: 'Index node to Triplestore (via Advanced Queue)'
+type: node
+plugin: index_node_to_triplestore_advancedqueue
+configuration: {  }

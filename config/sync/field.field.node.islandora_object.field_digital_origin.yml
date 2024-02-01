@@ -1,0 +1,25 @@
+uuid: 2282fe8d-f168-4a71-b4c1-a42712be33ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_origin
+    - node.type.islandora_object
+  module:
+    - options
+_core:
+  default_config_hash: 0gn1blhRjQFnPcNjjd2dTvI4EGrBHubcEp8tLBHv3ZQ
+id: node.islandora_object.field_digital_origin
+field_name: field_digital_origin
+entity_type: node
+bundle: islandora_object
+label: 'Digital Origin'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'reformatted digital'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

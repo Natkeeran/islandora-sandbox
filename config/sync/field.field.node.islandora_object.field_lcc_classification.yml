@@ -1,10 +1,12 @@
-uuid: ec189fc5-f80e-400a-9265-003aa09ff24c
+uuid: d0fd4986-d11d-497c-9d0f-fca7290d3c9d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_lcc_classification
     - node.type.islandora_object
+_core:
+  default_config_hash: YKG8lGMv_h5Ydll2V5yaYEQx2trYqoXEKzcQMP2aHIg
 id: node.islandora_object.field_lcc_classification
 field_name: field_lcc_classification
 entity_type: node

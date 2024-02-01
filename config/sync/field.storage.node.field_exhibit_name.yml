@@ -1,0 +1,26 @@
+uuid: 606e82fd-4b2a-49b0-9ed2-eba18621feac
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: MdaVWqMxhXjvISv3I-_Cqtuxz6JAdE_bAe8XqQahhaE
+id: node.field_exhibit_name
+field_name: field_exhibit_name
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,53 @@
+uuid: 6669ec71-59c9-4aa5-9b3d-005012e4e3b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.item_metadata
+  module:
+    - context
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__item_metadata_block_1
+theme: olivero
+region: content
+weight: -14
+provider: null
+plugin: 'views_block:item_metadata-block_1'
+settings:
+  id: 'views_block:item_metadata-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      islandora_object: islandora_object

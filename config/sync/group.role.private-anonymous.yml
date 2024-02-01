@@ -1,0 +1,15 @@
+uuid: db330fca-53b1-4e66-b7b0-2225d9de1d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - user.role.anonymous
+id: private-anonymous
+label: Anonymous
+weight: -102
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: private
+permissions: {  }

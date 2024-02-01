@@ -1,11 +1,13 @@
-uuid: 032c7afb-e5a0-4345-90d5-b9e1df8e18aa
+uuid: 197c9c24-6038-4fbc-aadb-effc1bd8f12b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_language
     - node.type.islandora_object
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.language
+_core:
+  default_config_hash: boPHVTIVWGx42doTOr0bcu5FTk5ajrujm_aFFQEtr6k
 id: node.islandora_object.field_language
 field_name: field_language
 entity_type: node
@@ -20,7 +22,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      language: language
     sort:
       field: name
       direction: asc

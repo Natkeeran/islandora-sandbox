@@ -1,25 +1,42 @@
-uuid: a5d0f5a9-c2bd-49ea-af8e-4f484d572810
+uuid: 754e5534-3c56-45c8-a767-7c026180bd3c
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.islandora_object
-  enforced:
-    module:
-      - islandora_defaults
   module:
     - node
+  enforced: {  }
 _core:
-  default_config_hash: 3fAlAZZjzkT5NiSEacRn9HhS6Yj1h86NxsdfT8PmJD0
+  default_config_hash: asapUUZJQOe3DytSlzwIjRbhy5n03D7UD7Sq22fogZY
 id: node.islandora_object
 targetEntityType: node
 bundle: islandora_object
 types:
   - 'pcdm:Object'
 fieldMappings:
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   field_alternative_title:
     properties:
       - 'dcterms:alternative'
+  field_description:
+    properties:
+      - 'dcterms:description'
+  field_dewey_classification:
+    properties:
+      - 'dcterms:subject'
+  field_edition:
+    properties:
+      - 'rdau:P60329'
   field_edtf_date:
     properties:
       - 'dcterms:date'
@@ -35,19 +52,46 @@ fieldMappings:
       - 'dcterms:issued'
     datatype_callback:
       callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
-  field_description:
-    properties:
-      - 'dcterms:description'
   field_extent:
     properties:
       - 'dcterms:extent'
+  field_genre:
+    properties:
+      - 'dcterms:type'
+  field_geographic_subject:
+    properties:
+      - 'dcterms:spatial'
   field_identifier:
+    properties:
+      - 'dcterms:identifier'
+  field_isbn:
+    properties:
+      - 'dbpedia:isbn'
+  field_language:
+    properties:
+      - 'dcterms:language'
+  field_lcc_classification:
+    properties:
+      - 'dcterms:subject'
+  field_local_identifier:
     properties:
       - 'dcterms:identifier'
   field_member_of:
     properties:
       - 'pcdm:memberOf'
     mapping_type: rel
+  field_note:
+    properties:
+      - 'skos:note'
+  field_oclc_number:
+    properties:
+      - 'dbpedia:oclc'
+  field_physical_form:
+    properties:
+      - 'dcterms:format'
+  field_place_published:
+    properties:
+      - 'relators:pup'
   field_resource_type:
     properties:
       - 'dcterms:type'
@@ -59,67 +103,21 @@ fieldMappings:
     properties:
       - 'dcterms:subject'
     mapping_type: rel
-  field_language:
-    properties:
-      - 'dcterms:language'
-  field_genre:
-    properties:
-      - 'dcterms:type'
-  field_physical_form:
-    properties:
-      - 'dcterms:format'
-  field_edition:
-    properties:
-      - 'rdau:P60329'
-  field_place_published:
-    properties:
-      - 'relators:pup'
-  field_table_of_contents:
-    properties:
-      - 'dcterms:tableOfContents'
-  field_dewey_classification:
-    properties:
-      - 'dcterms:subject'
-  field_lcc_classification:
-    properties:
-      - 'dcterms:subject'
   field_subjects_name:
     properties:
       - 'dcterms:subject'
+  field_table_of_contents:
+    properties:
+      - 'dcterms:tableOfContents'
   field_temporal_subject:
     properties:
       - 'dcterms:temporal'
-  field_geographic_subject:
-    properties:
-      - 'dcterms:spatial'
-  field_isbn:
-    properties:
-      - 'dbpedia:isbn'
-  field_oclc_number:
-    properties:
-      - 'dbpedia:oclc'
-  field_local_identifier:
-    properties:
-      - 'dcterms:identifier'
-  field_note:
-    properties:
-      - 'skos:note'
   field_weight:
     properties:
       - 'co:index'
   title:
     properties:
       - 'dcterms:title'
-  created:
-    properties:
-      - 'schema:dateCreated'
-    datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
-  changed:
-    properties:
-      - 'schema:dateModified'
-    datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   uid:
     properties:
       - 'schema:author'

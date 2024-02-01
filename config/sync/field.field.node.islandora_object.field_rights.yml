@@ -1,12 +1,14 @@
-uuid: a07b6f02-0ac1-47cd-96b2-966dc49110e3
+uuid: 4308ce12-6b12-4097-af20-18fe9d7715e3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_rights
     - node.type.islandora_object
+  module:
+    - text
 _core:
-  default_config_hash: zZ47ISpbhEGDmTAKZFhbCo40VbmfrLjQykG5NRhZZMc
+  default_config_hash: MCIjvgv_8UzXU53dXqN6ZIK4tgceg4aujqRpzF4vezA
 id: node.islandora_object.field_rights
 field_name: field_rights
 entity_type: node
@@ -14,8 +16,8 @@ bundle: islandora_object
 label: Rights
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text_long

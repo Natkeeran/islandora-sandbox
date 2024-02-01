@@ -1,17 +1,14 @@
-uuid: 6b48d622-3932-4b82-8a71-9b6f56f7a3b4
+uuid: 9e78d7c3-9f4f-4684-9e04-e6a43f1932b9
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_media_video_file
     - media.type.video
-  enforced:
-    module:
-      - islandora_core_feature
   module:
     - file
 _core:
-  default_config_hash: aVsH94glMbKDyF_GDPdx83nXIjQmnd9chf7vHN1ApGc
+  default_config_hash: 6kMMjmk2r_csGQ52qI9BUaO8r_oAzNLbxlclaj-JlDQ
 id: media.video.field_media_video_file
 field_name: field_media_video_file
 entity_type: media
@@ -19,14 +16,14 @@ bundle: video
 label: 'Video file'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_extensions: mp4
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  max_filesize: ''
-  description_field: false
   handler: 'default:file'
   handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: ''
+  description_field: false
 field_type: file

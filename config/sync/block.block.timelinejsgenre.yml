@@ -1,0 +1,49 @@
+uuid: a10c80b5-fd09-4110-80a6-467ef7c4d16f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.timelinejs_genre
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: timelinejsgenre
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: 'facet_block:timelinejs_genre'
+settings:
+  id: 'facet_block:timelinejs_genre'
+  label: Genre
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: timelinejsgenre
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-timelinejs_solr_based_view-page_1: view-timelinejs_solr_based_view-page_1

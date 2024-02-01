@@ -1,0 +1,12 @@
+uuid: dfcaf978-2231-4a0e-a8bb-8a5601d148fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: SmYGqLT2_hvMIt7-u9qVtar9NWLRTJlKAGYkF2KCzrc
+id: media.archive_list_contents_viewer
+label: 'Archive List Contents Viewer'
+targetEntityType: media
+cache: true

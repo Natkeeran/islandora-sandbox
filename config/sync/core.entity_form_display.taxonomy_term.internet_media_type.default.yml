@@ -1,0 +1,53 @@
+uuid: 433c598e-5617-44a7-864b-7ca06c08d65c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.internet_media_type
+  module:
+    - path
+    - text
+_core:
+  default_config_hash: RayL8P_6kChftcJpYKv5vcDp_LKkD0POAsxLkFwf850
+id: taxonomy_term.internet_media_type.default
+targetEntityType: taxonomy_term
+bundle: internet_media_type
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

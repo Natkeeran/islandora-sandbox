@@ -1,4 +1,4 @@
-uuid: 1b226aba-e13f-4f22-95a6-60a1b939f18c
+uuid: 62f05d6f-13c0-4094-b7fa-9cd631073c9f
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,9 @@ dependencies:
     - controlled_access_terms
     - node
     - taxonomy
+  enforced: {  }
 _core:
-  default_config_hash: MZEefPoBKkFfc6HueKsNBCOAt_-ECzdCP32NNW7oc5Y
+  default_config_hash: iC9zePEs4dPTQ4rK5WsYYK2BuW0Pd_XlqFxZRdncD60
 id: node.field_linked_agent
 field_name: field_linked_agent
 entity_type: node

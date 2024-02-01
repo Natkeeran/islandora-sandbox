@@ -1,4 +1,4 @@
-uuid: 00655fb9-5d00-4862-8ff6-1d02f414630b
+uuid: cf0b3606-23e4-483f-8cc3-8e81c53933f3
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: 4VkdRSmMXrSQeHdN9Gr8fgn0Pc15O0zqETCWmxK7qF0
 id: taxonomy_term.subject

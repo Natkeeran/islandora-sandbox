@@ -1,0 +1,18 @@
+uuid: 75b2e565-a613-41fe-b15a-f35928d7e2ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - media.type.web_archive
+  module:
+    - groupmedia
+    - media
+id: private-group_media-web_archive
+group_type: private
+content_plugin: 'group_media:web_archive'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true
+  tracking_enabled: 1

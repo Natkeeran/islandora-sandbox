@@ -5,17 +5,20 @@ dependencies:
   module:
     - field_permissions
     - node
+  enforced: {  }
 third_party_settings:
   field_permissions:
     permission_type: public
+_core:
+  default_config_hash: 8fsCtK9rxPwMNyEPf71TCaByrry1EXscGosSAZpzuvw
 id: node.field_coordinates_text
 field_name: field_coordinates_text
 entity_type: node
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: -1

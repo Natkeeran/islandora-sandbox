@@ -1,4 +1,4 @@
-uuid: 27a9c12c-9f1b-468f-a5db-e96328bda7f0
+uuid: 561d7d07-29fb-47dd-aa48-8f76a3701dff
 langcode: en
 status: true
 dependencies:
@@ -28,39 +28,38 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_authority_link:
+    type: authority_link_default
     weight: 122
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: authority_link_default
-    region: content
   field_cat_date_begin:
+    type: edtf_default
     weight: 8
+    region: content
     settings:
       strict_dates: false
       intervals: false
     third_party_settings: {  }
-    type: edtf_default
-    region: content
   field_cat_date_end:
+    type: edtf_default
     weight: 9
+    region: content
     settings:
       strict_dates: false
       intervals: false
     third_party_settings: {  }
-    type: edtf_default
-    region: content
   field_relationships:
+    type: typed_relation_default
     weight: 123
+    region: content
     settings:
       match_operator: CONTAINS
-      size: '60'
+      size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: typed_relation_default
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -84,14 +83,14 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

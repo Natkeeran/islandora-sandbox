@@ -1,4 +1,4 @@
-uuid: 52f5915f-c867-47d6-b511-61222e48e863
+uuid: 0667f1e4-154c-47fd-8084-216f88b7ac3c
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: R7wsdiUn_Lk7ALc3lLrXwjgo649xSo1uWg3IpX55590
 id: taxonomy_term.person

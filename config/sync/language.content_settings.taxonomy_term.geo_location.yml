@@ -1,4 +1,4 @@
-uuid: ff786990-4477-4ffc-8363-2bcad26f654a
+uuid: b80b8a95-8603-4292-9308-d1b690f50461
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: 0_hEJhLmynz6bRW7K1PV9MYWxOpG7cPIQyAdYH-R_7Y
 id: taxonomy_term.geo_location

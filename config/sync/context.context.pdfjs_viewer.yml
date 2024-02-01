@@ -1,0 +1,49 @@
+uuid: 6b2a946d-8564-4c79-8fa0-70ddfa7d337f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'Pdfjs Viewer'
+name: pdfjs_viewer
+group: Display
+description: 'Displays the Service File or Original File in Pdfjs view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'http://mozilla.github.io/pdf.js'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      f74f8039-2d16-4d10-ae7f-beed15ac9770:
+        uuid: f74f8039-2d16-4d10-ae7f-beed15ac9770
+        id: 'views_block:media_display-pdfjs'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_pdfjs
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: pdfjs_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

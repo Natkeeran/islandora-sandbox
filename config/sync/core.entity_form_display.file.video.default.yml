@@ -1,0 +1,87 @@
+uuid: 2d5ea6a8-d719-403a-ad3d-592c3da874db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.video.field_fits
+    - field.field.file.video.field_fits_checksum
+    - field.field.file.video.field_fits_file_format
+    - field.field.file.video.field_fits_file_size
+    - field.field.file.video.field_fits_mimetype
+    - field.field.file.video.field_fits_pronom_puid
+    - file_entity.type.video
+  module:
+    - json_field
+_core:
+  default_config_hash: x-0ixfwqsbbjQ0PAgtrjCrmgLuWktR59ohCOKUohTT4
+id: file.video.default
+targetEntityType: file
+bundle: video
+mode: default
+content:
+  field_fits:
+    type: json_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_checksum:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_file_format:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_file_size:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_mimetype:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_pronom_puid:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  filename:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

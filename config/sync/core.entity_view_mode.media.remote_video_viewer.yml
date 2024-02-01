@@ -1,0 +1,12 @@
+uuid: b9f39f1c-e10a-42f5-81a3-357272e230f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: KdobotbIt5CMJ8E2XST153cqdLgr8BOQW_28bkMXkDg
+id: media.remote_video_viewer
+label: 'Remote Video Viewer'
+targetEntityType: media
+cache: true

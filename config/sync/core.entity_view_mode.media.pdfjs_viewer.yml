@@ -1,0 +1,13 @@
+uuid: f1e5c99e-24a8-4753-a6af-2e699dd65ec9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced: {  }
+_core:
+  default_config_hash: yL1-3KpDzG6juOo_jtBOOpZGnpdvu8oaDQhlqcS0bK4
+id: media.pdfjs_viewer
+label: 'PDFjs Viewer'
+targetEntityType: media
+cache: true

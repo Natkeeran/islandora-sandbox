@@ -1,24 +1,21 @@
-uuid: d8e73b18-f432-485a-8bdd-97c86d2bd201
+uuid: 190d9a29-22f4-428a-b741-a5c34a839b09
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
   module:
     - file
     - media
 _core:
-  default_config_hash: iTxgIfCzyDceYyI-KMmq2OFKyXpu6jVPZ_KCEykhHY4
+  default_config_hash: JCHoh95CpUeBx9ch24Tmi6ru0nwmNz8xWVH4Qs7RnTg
 id: media.field_media_audio_file
 field_name: field_media_audio_file
 entity_type: media
 type: file
 settings:
+  target_type: file
   display_field: false
   display_default: false
-  uri_scheme: fedora
-  target_type: file
+  uri_scheme: private
 module: file
 locked: false
 cardinality: 1

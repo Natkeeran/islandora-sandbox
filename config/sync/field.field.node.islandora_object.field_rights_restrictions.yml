@@ -1,0 +1,21 @@
+uuid: 833f9bb6-7cc2-4f2d-83d5-f49ed170470f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rights_restrictions
+    - node.type.islandora_object
+_core:
+  default_config_hash: CrZvzYLNxhNOE6wgScLdg9BsslNANUU9gUY88Yku4uI
+id: node.islandora_object.field_rights_restrictions
+field_name: field_rights_restrictions
+entity_type: node
+bundle: islandora_object
+label: 'Rights Restrictions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

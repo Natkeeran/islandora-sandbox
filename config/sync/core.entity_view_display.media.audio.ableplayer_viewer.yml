@@ -1,0 +1,52 @@
+uuid: eaceb55a-b91e-4ccf-b21c-563567bd8eba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ableplayer_viewer
+    - field.field.media.audio.ableplayer_chapter
+    - field.field.media.audio.ableplayer_description
+    - field.field.media.audio.ableplayer_poster_image
+    - field.field.media.audio.ableplayer_sign_language
+    - field.field.media.audio.field_ableplayer_media_caption
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_use
+    - media.type.audio
+  module:
+    - ableplayer
+    - ableplayer_extend
+_core:
+  default_config_hash: hGu__WOPkH-fGVmY3e7nA2Frph-69vo8ivaO0pEDyFY
+id: media.audio.ableplayer_viewer
+targetEntityType: media
+bundle: audio
+mode: ableplayer_viewer
+content:
+  field_media_audio_file:
+    type: ableplayer_audio
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings:
+      ableplayer_extend:
+        display_ableplayer_transcript_audio: '1'
+        show_timestamp_audio: '1'
+    weight: 0
+    region: content
+hidden:
+  ableplayer_chapter: true
+  ableplayer_description: true
+  ableplayer_poster_image: true
+  ableplayer_sign_language: true
+  created: true
+  field_ableplayer_media_caption: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

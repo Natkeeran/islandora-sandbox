@@ -1,0 +1,13 @@
+uuid: 49b496e5-c9e9-4697-82b5-d664ff90f973
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced: {  }
+_core:
+  default_config_hash: g9d3VOi8QVRhu8tKsT1lH0krgQj4-tsaQX88S38SAz4
+id: media.openseadragon_viewer
+label: 'OpenSeadragon Viewer'
+targetEntityType: media
+cache: true

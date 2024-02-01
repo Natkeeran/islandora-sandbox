@@ -1,11 +1,13 @@
-uuid: 5dbd1636-2481-49c0-a3f8-a996bd4bae97
+uuid: 2fdbccac-5ec1-4fb5-b3b5-4271a23cbca2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_temporal_subject
     - node.type.islandora_object
-    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.temporal_subjects
+_core:
+  default_config_hash: LoSv_1735T1uFfGvb1nP4YhhAwRhOWbwUVnN_KDJqvE
 id: node.islandora_object.field_temporal_subject
 field_name: field_temporal_subject
 entity_type: node
@@ -20,7 +22,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      subject: subject
+      temporal: temporal_subjects
     sort:
       field: name
       direction: asc

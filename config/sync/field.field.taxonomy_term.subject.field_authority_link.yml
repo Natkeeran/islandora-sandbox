@@ -1,4 +1,4 @@
-uuid: 856b24af-ef50-4158-ab8b-bb146e4d4176
+uuid: a18c531d-8de4-4a73-981c-ce7035798404
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - controlled_access_terms
 _core:
-  default_config_hash: FxxCREY_FA7NclXDepm8WCJYlCr-u2sPeevoXnhJzhM
+  default_config_hash: VDYYY3_FwGKA5NirbBlaTMxL9a05FPxRiBv8LeuNteo
 id: taxonomy_term.subject.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
@@ -34,6 +34,7 @@ settings:
     tgn: 'Getty Thesaurus of Geographic Names'
     tgm: 'Thesaurus for Graphic Materials'
     lcgft: 'Library of Congress Genre/Form Terms'
+    wiki: Wikidata
     other: Other
   title: 1
   link_type: 16

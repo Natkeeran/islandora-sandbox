@@ -1,0 +1,49 @@
+uuid: 86ca99cd-b10d-409a-b8ae-ec9f57f6d830
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.map_genre
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: mapgenre
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:map_genre'
+settings:
+  id: 'facet_block:map_genre'
+  label: Genre
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: mapgenre
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-map_solr_based_view-page_1: view-map_solr_based_view-page_1

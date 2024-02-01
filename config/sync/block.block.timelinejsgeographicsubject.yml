@@ -1,0 +1,49 @@
+uuid: efb48703-6e89-4880-be8f-ad0ede7f89b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.timelinejs_geographic_subject
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: timelinejsgeographicsubject
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: 'facet_block:timelinejs_geographic_subject'
+settings:
+  id: 'facet_block:timelinejs_geographic_subject'
+  label: 'Geographic Subject'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: timelinejsgeographicsubject
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-timelinejs_solr_based_view-page_1: view-timelinejs_solr_based_view-page_1
