@@ -1,0 +1,52 @@
+uuid: 730ac5b0-c0d2-449a-8c02-a2b0d2c2f4e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+id: overwrite_behavior_of_search_button_when_timeline_and_map
+label: 'Overwrite behavior of Search button when timeline and map'
+code: |-
+  jQuery(document).ready(function() {
+    jQuery("button.advanced-search-form__search").click(function(){
+      setTimeout(
+        function() 
+        {
+          window.location.href = window.location.href;
+        }, 1000);
+    });
+    
+    $(document).keypress(function(event){
+      var keycode = (event.keyCode ? event.keyCode : event.which);
+      if(keycode == '13'){
+        setTimeout(
+        function() 
+        {
+          window.location.href = window.location.href;
+        }, 1000);
+      }
+    });
+    
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: false
+conditions:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-map_solr_based_view-page_1: view-map_solr_based_view-page_1
+      view-timelinejs_solr_based_view-page_1: view-timelinejs_solr_based_view-page_1
+contexts: {  }
+conditions_require_all: true

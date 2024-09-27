@@ -1,0 +1,21 @@
+uuid: b3f007c9-ae64-4555-b934-957c57463fb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_ocr
+    - media.type.image
+_core:
+  default_config_hash: 9PIuNd7PAFVbLhrk8JHE4Kqbw18fo3r96UJf1_Fs4z8
+id: media.image.field_ocr
+field_name: field_ocr
+entity_type: media
+bundle: image
+label: ocr
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

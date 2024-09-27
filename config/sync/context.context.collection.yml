@@ -1,63 +1,27 @@
-uuid: 71865cfd-80bb-4ee0-a1ec-9f402eec490d
+uuid: fb53af01-1d04-4128-90ca-133e8a389eb1
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_defaults
   module:
-    - islandora
-_core:
-  default_config_hash: N6lOE1Ui_bmilXMN8Iw_sD3EC1nM-Ua40rnmyKVEf9Y
-name: collection
+    - termwithuri_condition
 label: Collection
+name: collection
 group: Display
-description: 'Display block of children'
+description: 'If a Collection or Compound, display a block of children'
 requireAllConditions: false
 disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: false
+    logic: or
+    uri: 'http://purl.org/dc/dcmitype/Collection,http://vocab.getty.edu/aat/300242735'
+    negate: 0
     context_mapping:
       node: '@node.node_route_context:node'
-    uri: 'http://purl.org/dc/dcmitype/Collection'
-    logic: and
 reactions:
   blocks:
-    blocks:
-      41f1d520-14ae-479e-90d2-34aa6f4a750e:
-        id: 'views_block:members-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content_suffix
-        weight: '0'
-        context_mapping: {  }
-        theme: carapace
-        css_class: ''
-        unique: 0
-        context_id: collection
-        custom_id: views_block_members_block_1
-      d7f0425f-2b03-4ff3-8bfa-8f9e082ed7a1:
-        id: 'views_block:sandbox_members_image_gallery-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content
-        weight: '0'
-        context_mapping: {  }
-        custom_id: views_block_sandbox_members_image_gallery_block_1
-        theme: solid
-        css_class: ''
-        unique: 0
-        context_id: collection
-        uuid: d7f0425f-2b03-4ff3-8bfa-8f9e082ed7a1
     id: blocks
-    saved: false
+    blocks: {  }
     include_default_blocks: 1
-weight: 1
+    saved: false
+weight: 0

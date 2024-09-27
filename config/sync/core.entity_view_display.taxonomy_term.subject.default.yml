@@ -1,4 +1,4 @@
-uuid: 4b28e1c3-d4f8-45cf-8e33-eb9f155a5697
+uuid: 116eeeb6-5170-43f7-a378-0a27c86d7e40
 langcode: en
 status: true
 dependencies:
@@ -16,23 +16,24 @@ bundle: subject
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_authority_link:
-    weight: 103
+    type: authority_formatter_default
     label: above
     settings:
-      trim_length: '80'
-      url_only: ''
-      url_plain: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
       rel: ''
       target: _blank
     third_party_settings: {  }
-    type: authority_formatter_default
+    weight: 103
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

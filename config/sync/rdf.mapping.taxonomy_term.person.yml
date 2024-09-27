@@ -1,4 +1,4 @@
-uuid: 00f48e9a-636c-44f0-ade5-cb657f150552
+uuid: b5eb0b99-bbec-4187-89a1-8f60592495d5
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - taxonomy
 _core:
-  default_config_hash: MTUhcNtS9IOszPcaNXe9ycw_UeGz9eDUECrYC3rWKAg
+  default_config_hash: Ho8imt84_uHqV26OJ5CBtyWf_OvyGS8q0bC5X8HuO1o
 id: taxonomy_term.person
 targetEntityType: taxonomy_term
 bundle: person
@@ -20,6 +20,9 @@ fieldMappings:
   description:
     properties:
       - 'schema:description'
+  field_alternate_name:
+    properties:
+      - 'schema:alternateName'
   field_person_alternate_names:
     properties:
       - 'schema:alternateName'

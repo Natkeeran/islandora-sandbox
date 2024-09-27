@@ -1,4 +1,4 @@
-uuid: 1ac9db68-c55b-4a89-8a10-09a70ed6290f
+uuid: dc423697-d599-4a07-a275-8c4bbfcf3d89
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - comment
 _core:
-  default_config_hash: r-hrxwbKKXBKQnBefGjXNSdU00u2fPvMWEykGRHqd10
+  default_config_hash: UqXlkKC4v2-bDfWx4zcXQrD5YIi3d5byENEmWv-G_Uc
 id: node.article.comment
 field_name: comment
 entity_type: node
@@ -16,20 +16,20 @@ bundle: article
 label: Comments
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     status: 2
     cid: 0
-    last_comment_name: null
     last_comment_timestamp: 0
+    last_comment_name: null
     last_comment_uid: 0
     comment_count: 0
 default_value_callback: ''
 settings:
   default_mode: 1
   per_page: 50
-  form_location: true
   anonymous: 0
+  form_location: true
   preview: 1
 field_type: comment

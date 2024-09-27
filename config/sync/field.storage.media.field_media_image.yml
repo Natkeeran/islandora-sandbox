@@ -1,32 +1,31 @@
-uuid: 4aaca7c9-22b4-4d11-a2e3-bbcb1a196c3f
+uuid: cf08a3a5-91f7-4a19-b3f7-c5f8aa45b84e
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - media
-      - islandora_core_feature
   module:
     - file
     - image
     - media
+  enforced:
+    module:
+      - media
 _core:
-  default_config_hash: NslRY6r63iEhkDXbs8n7v_iOBxPqaKhstX1Sb0HA7x0
+  default_config_hash: 0N0KSFk57p6qsq3qM4lYVGSuROvzXK-tSsdwByqUh3g
 id: media.field_media_image
 field_name: field_media_image
 entity_type: media
 type: image
 settings:
-  uri_scheme: fedora
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: private
   default_image:
     uuid: ''
     alt: ''
     title: ''
     width: null
     height: null
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
 cardinality: 1

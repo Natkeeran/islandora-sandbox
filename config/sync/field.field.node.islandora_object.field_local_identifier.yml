@@ -1,10 +1,12 @@
-uuid: 612fed3e-761d-4e2a-bfe9-c963c06dc257
+uuid: 306adb01-c949-44a3-813b-4376dc528a40
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_local_identifier
     - node.type.islandora_object
+_core:
+  default_config_hash: KF-ak1NqlIkf-WrwHp-1cwuTmR6eLVDBkTN4CLiokZQ
 id: node.islandora_object.field_local_identifier
 field_name: field_local_identifier
 entity_type: node

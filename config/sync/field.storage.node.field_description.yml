@@ -1,14 +1,12 @@
-uuid: 2498ef0a-6a7b-4ab8-b419-62e5bf7b5fd6
+uuid: 374122f8-71f0-49dd-a2fb-45d03ff61dce
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora
   module:
     - node
+  enforced: {  }
 _core:
-  default_config_hash: 8cYoje9ObIxX1k3ffRc-tWuu3hcddJzy3EHCPlq8JPI
+  default_config_hash: cj4O2XI2qWlaIpzOeOsOrzzFZr4B7ZNuNP1iWI0rhSs
 id: node.field_description
 field_name: field_description
 entity_type: node

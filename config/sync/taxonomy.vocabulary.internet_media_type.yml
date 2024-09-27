@@ -1,0 +1,10 @@
+uuid: 6101fa2e-cb9f-4742-ba8f-3b77d09829ac
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: f21_ntqBUQxhbQF0fimyuLPDu-NNd11l6v0Iqus0JF8
+name: 'Internet Media Type'
+vid: internet_media_type
+description: 'MIME Types from https://www.iana.org/assignments/media-types/media-types.xhtml'
+weight: 0

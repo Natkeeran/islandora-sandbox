@@ -1,12 +1,10 @@
-uuid: 4d81109d-ded5-4e96-8143-18f6534ea270
+uuid: a706489d-20c8-4cf9-bc89-a23d18bc0625
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_defaults
   module:
     - menu_ui
+  enforced: {  }
 third_party_settings:
   menu_ui:
     available_menus:

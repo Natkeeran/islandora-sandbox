@@ -1,4 +1,4 @@
-uuid: dabf7c8c-8556-4a8b-99cb-547bec33926f
+uuid: ac781baf-4a30-4bf1-a013-4b5f6b490723
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,14 @@ dependencies:
     - field.storage.media.field_access_terms
     - media.type.video
     - taxonomy.vocabulary.islandora_access
-_core:
-  default_config_hash: rQJGaUMqAT7XoaBgoFeFJfRfVOjxlPl9TuA_lcUdqy4
 id: media.video.field_access_terms
 field_name: field_access_terms
 entity_type: media
 bundle: video
-label: 'Access terms'
-description: 'Terms that define who has access to view/edit this resource.'
+label: 'Access Terms'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

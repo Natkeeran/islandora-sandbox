@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: LeKFw1oujjHdGp7Sel3weEZs1ipWCd8C7wNq8RiJnnY
+includeSelf: false
+referenceFields:
+  - field_member_of
+  - field_part_of
+dependencies:
+  module:
+    - islandora
+  enforced:
+    module:
+      - islandora_breadcrumbs

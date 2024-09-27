@@ -1,4 +1,4 @@
-uuid: 24861c26-9962-4609-aac1-a0cafffc1d42
+uuid: 541255d7-5c52-4708-857c-92345e1e70ed
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,12 @@ dependencies:
     - field.storage.media.field_access_terms
     - media.type.file
     - taxonomy.vocabulary.islandora_access
-_core:
-  default_config_hash: 4J_HfSex6RG0DqvYnL64GW2PPdCE9LTI_wcJbVBPTJA
 id: media.file.field_access_terms
 field_name: field_access_terms
 entity_type: media
 bundle: file
-label: 'Access terms'
-description: 'Terms that define who has access to view/edit this resource.'
+label: 'Access Terms'
+description: ''
 required: false
 translatable: true
 default_value: {  }

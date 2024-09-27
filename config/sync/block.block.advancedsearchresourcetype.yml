@@ -1,0 +1,49 @@
+uuid: 4c2955e1-7dba-494c-a928-0e7366031d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.advanced_search_resource_type
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: advancedsearchresourcetype
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:advanced_search_resource_type'
+settings:
+  id: 'facet_block:advanced_search_resource_type'
+  label: 'AdvancedSearch: Resource Type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: advancedsearchresourcetype
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-advanced_search-page_1: view-advanced_search-page_1
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

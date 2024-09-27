@@ -1,0 +1,10 @@
+uuid: a6aa6e4a-4de6-4903-b7b9-877d82d3f2e1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QXBhpbv5U7Z81AIh0r2tb2uGfzmzS9Vwg5ki7iZY4GU
+name: PRONOM
+vid: pronom
+description: 'Vocabulary for PRONOM PUID from FITS'
+weight: 0

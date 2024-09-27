@@ -1,0 +1,29 @@
+uuid: 94d91113-5314-4b9e-93ed-ee2e4dbd5b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.web_archive
+  module:
+    - file
+_core:
+  default_config_hash: Kk0Y20EM5qbqXwH0wQ1e-cfkHpMtDOOGm0aHcet8yh4
+id: media.web_archive.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: web_archive
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'warc wacz har wbn'
+  max_filesize: '500 MB'
+  description_field: false
+field_type: file

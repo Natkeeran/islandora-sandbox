@@ -1,0 +1,21 @@
+uuid: 771cd932-f691-441a-8548-96794a064cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_description_note
+    - node.type.islandora_object
+_core:
+  default_config_hash: zUrxUZq7rVf4Ojb86w9kjOYSC-e-GcEE9H9PEhK7ZO0
+id: node.islandora_object.field_physical_description_note
+field_name: field_physical_description_note
+entity_type: node
+bundle: islandora_object
+label: 'Physical Description Note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

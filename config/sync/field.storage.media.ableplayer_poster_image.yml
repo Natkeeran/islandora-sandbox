@@ -1,0 +1,23 @@
+uuid: 10219cff-6862-48af-a2d3-bde65aeeb35d
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media
+id: media.ableplayer_poster_image
+field_name: ableplayer_poster_image
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: private
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

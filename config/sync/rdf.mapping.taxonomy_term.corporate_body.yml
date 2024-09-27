@@ -1,4 +1,4 @@
-uuid: 70eef152-2fa4-41cb-b13f-3bf10ab513ad
+uuid: db1336a9-b51d-4a1d-bf5c-3f25e9dde4ef
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - taxonomy
 _core:
-  default_config_hash: D05YnGp5dpzY6wRI2GNx2CNmWLM7tjzy6egdRVlkG4I
+  default_config_hash: njgC_jyjnGQYRmyWTTZAXS6oL6f4mWI6RymRQ7tIm0E
 id: taxonomy_term.corporate_body
 targetEntityType: taxonomy_term
 bundle: corporate_body

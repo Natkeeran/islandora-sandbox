@@ -1,0 +1,23 @@
+uuid: 28cbcefb-8a60-4d2e-9d8d-9c3fc0f2554c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits
+    - file_entity.type.image
+  module:
+    - json_field
+_core:
+  default_config_hash: mD9sDFGKNujLRIW1hIQtAYfkKPdE9mZU-nh7bh9T9XM
+id: file.image.field_fits
+field_name: field_fits
+entity_type: file
+bundle: image
+label: Fits
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native

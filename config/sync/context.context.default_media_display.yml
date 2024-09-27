@@ -1,0 +1,49 @@
+uuid: 9d9f4279-6add-46c3-be8c-f4e221962784
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'Default Media Display'
+name: default_media_display
+group: Display
+description: 'Displays the Service File or Original File in its "Service File" view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: or
+    uri: 'http://mozilla.github.io/pdf.js,http://openseadragon.github.io,https://projectmirador.org,https://ableplayer.github.io/ableplayer,https://www.drupal.org/project/csvfile_formatter,https://www.drupal.org/project/archive_list_contents'
+    negate: 1
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      85508c93-b2d8-4266-9c56-f33cf62e395d:
+        uuid: 85508c93-b2d8-4266-9c56-f33cf62e395d
+        id: 'views_block:media_display-service_file'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_service_file
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: default_media_display
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

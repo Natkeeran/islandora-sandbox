@@ -1,9 +1,9 @@
-uuid: c8685ade-efab-4e91-982c-dc21f61af124
+uuid: e9e31100-ea62-47ea-b6bf-89744d00ffec
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: CjWKqplCExFpMEedjrb90ynM5F8nCTB4PD02nc0dhNM
+  default_config_hash: uxsQkswnjZpTqAtUqoqPpTwnJKSGFGx0jYPUjeGzeeY
 name: 'Islandora Media Use'
 vid: islandora_media_use
 description: 'Terms to define how a media object is to be used.'

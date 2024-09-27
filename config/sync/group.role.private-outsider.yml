@@ -1,0 +1,26 @@
+uuid: bda03fe1-a65f-49b4-bc77-60cf7437edc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - user.role.authenticated
+id: private-outsider
+label: Outsider
+weight: -101
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: private
+permissions:
+  - 'view group_media:able_player_caption entity'
+  - 'view group_media:audio entity'
+  - 'view group_media:document entity'
+  - 'view group_media:file entity'
+  - 'view group_media:image entity'
+  - 'view group_media:remote_video entity'
+  - 'view group_media:video entity'
+  - 'view group_media:web_archive entity'
+  - 'view group_node:article entity'
+  - 'view group_node:islandora_object entity'
+  - 'view group_node:page entity'

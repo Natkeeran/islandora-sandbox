@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: Ui8i6g053BY4AepP1dqbEu43qTqV-mRWvPZ6yerLrpA
+fits: null
+fits-method: remote
+fits-path: ''
+fits-advancedqueue_id: fits
+fits-extract-ingesting: 1
+aqj-max-retries: '5'
+aqj-retry_delay: '120'
+fits-default-fields:
+  - field_fits_file_format
+  - field_fits_checksum
+  - field_fits
+fits-server-url: 'http://fits:8080/fits/examine'

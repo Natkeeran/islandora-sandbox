@@ -1,0 +1,20 @@
+uuid: 17e49ded-95bf-47d8-bb4a-c20b879251f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.country
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 86_PvmnjlIAH5ePzWzWLITBDctSQX5yr25xaDs9UUCw
+id: taxonomy_term.country
+target_entity_type_id: taxonomy_term
+target_bundle: country
+default_langcode: site_default
+language_alterable: true

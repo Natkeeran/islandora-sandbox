@@ -1,0 +1,45 @@
+uuid: 981eefa5-fc32-4771-87d8-9b28fcd92eff
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+id: add_timeline_link_in_advanced_search_results_pager_block
+label: 'Add Timeline Link in Advanced Search Results Pager block'
+code: |
+  jQuery(window).on('load', function(){
+    current_url = window.location.pathname;
+    
+    jQuery(".pager__display").find('ul').append('<li class="pager__item"><a id="timeline-link" href="/collection/'+ current_url.split("/")[2] +'/timeline" class="pager__link"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Timeline</a></li>');
+    
+    // for olivero theme
+    jQuery(".pager__group").children('ul').eq(1).append('<li class="pager__item"><a id="timeline-link" href="/collection/'+ current_url.split("/")[2] +'/timeline" class="pager__link" ><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Timeline</a></li>');
+    
+    jQuery('#block-barriodepartments-content > .content > .views-element-container').on('DOMSubtreeModified', function(){
+    	  // process timeline url
+    	  var url = window.location.href;
+    	  var parts = url.split('?');
+    	  
+    	  // replace url for timline link
+    	  if (parts[1].length)
+  	       jQuery("#timeline-link").attr("href", parts[0] + "/timeline?" + parts[1]);
+  	    else 
+  	    	jQuery("#timeline-link").attr("href", parts[0] + "/timeline");
+  	});
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+contexts: {  }
+conditions_require_all: true

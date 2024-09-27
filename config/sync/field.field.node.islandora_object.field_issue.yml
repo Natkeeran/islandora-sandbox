@@ -1,0 +1,21 @@
+uuid: 15926815-99ba-47ef-ac3e-c76968bad5a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issue
+    - node.type.islandora_object
+_core:
+  default_config_hash: LrsAr1r68FAYn57akdHkVj8bJNucs62KBWTMonIjaAg
+id: node.islandora_object.field_issue
+field_name: field_issue
+entity_type: node
+bundle: islandora_object
+label: Issue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

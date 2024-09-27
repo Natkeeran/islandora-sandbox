@@ -1,0 +1,27 @@
+uuid: 0642e9f0-3d2e-4771-b672-926dc269a398
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: zFgKin5OgOhvHPMjNhqXFjOTrEMJEDpLkQoYu-CDpbU
+id: file.field_fits_height
+field_name: field_fits_height
+entity_type: file
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

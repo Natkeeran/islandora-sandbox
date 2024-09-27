@@ -1,4 +1,4 @@
-uuid: 6a06e4d1-3337-4dcd-b635-757eab732b80
+uuid: 8b10c4f4-5737-418a-b5a8-07bcc9c5495c
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ field_name: field_media_use
 entity_type: media
 bundle: file
 label: 'Media Use'
-description: 'Defined by Portland Common Data Model: Use Extension https://pcdm.org/2015/05/12/use. ''Original File'' will trigger creation of derivatives.'
+description: ''
 required: false
 translatable: true
 default_value: {  }

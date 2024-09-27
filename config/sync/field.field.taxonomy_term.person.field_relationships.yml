@@ -1,4 +1,4 @@
-uuid: b6ca741e-9039-446c-b5f0-d87c5c266350
+uuid: 321998de-af94-4f86-87a3-14b17eea08fb
 langcode: en
 status: true
 dependencies:
@@ -31,7 +31,7 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: 0
+    auto_create: false
     auto_create_bundle: corporate_body
   rel_types:
     'schema:knows': Knows

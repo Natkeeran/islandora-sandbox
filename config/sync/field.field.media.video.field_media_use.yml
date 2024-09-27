@@ -1,4 +1,4 @@
-uuid: 6f6e71d8-d1f7-4c46-97bc-f705e3b2f445
+uuid: ceec4395-c10e-4fce-acc5-62810c32db5a
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - media.type.video
     - taxonomy.vocabulary.islandora_media_use
 _core:
-  default_config_hash: edwWb7GuvSOr4MWenMMVfLPyvKMoAhxHwjGCpeKO5GA
+  default_config_hash: ItCCR1HuFMVGf78Nuj-Z05cB0GeyzPgPY9vORuQu8l4
 id: media.video.field_media_use
 field_name: field_media_use
 entity_type: media

@@ -1,4 +1,4 @@
-uuid: e01bd110-9ad9-4a2c-9af6-9557a3cfc19e
+uuid: 57523c33-84dd-492e-8043-7bc729eca05a
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: gy9shP9s9yiWw3M06HQAMxq3XFJGK1c8gzpKCjDD79M
 id: taxonomy_term.resource_types

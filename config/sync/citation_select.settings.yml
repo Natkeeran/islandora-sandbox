@@ -1,0 +1,28 @@
+csl_map:
+  field_model:
+    - type
+  field_description:
+    - abstract
+  field_genre:
+    - genre
+  field_linked_agent:
+    - publisher
+    - author
+    - editor
+  field_place_published_country:
+    - publisher-place
+  title:
+    - title
+  field_language:
+    - language
+  field_edtf_date_created:
+    - original-date
+typed_relation_map:
+  'relators:aut': author
+  'relators:cre': author
+  'relators:edt': editor
+  'relators:pbl': publisher
+reference_type_field_map:
+  'Paged Content': book
+  Image: figure
+reference_type_field: field_genre

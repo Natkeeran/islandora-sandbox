@@ -1,0 +1,49 @@
+uuid: 722255fb-7574-4923-b566-8d65e832988e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'Archive List Contents Viewer'
+name: archive_list_contents_viewer
+group: Display
+description: 'Displays the Service File or Original File in Archive List Contents view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'https://www.drupal.org/project/archive_list_contents'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      4e0baf6a-f816-4b44-93f9-f5d4ace2c499:
+        uuid: 4e0baf6a-f816-4b44-93f9-f5d4ace2c499
+        id: 'views_block:media_display-archive_list_contents'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_archive_list_contents
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: archive_list_contents_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

@@ -1,0 +1,12 @@
+uuid: 6a737df9-5445-4b18-9180-cd936fbf6788
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: AtDfmqWUNxNju3uVIuP5cGO0ZmmbD0R6h8H3Slz1xww
+id: node.replayweb_player_viewer
+label: 'ReplayWeb Player Viewer'
+targetEntityType: node
+cache: true

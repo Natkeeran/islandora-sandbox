@@ -1,0 +1,22 @@
+diff --git a/ableplayer.install b/ableplayer.install
+index 025b44e..f80161d 100644
+--- a/ableplayer.install
++++ b/ableplayer.install
+@@ -73,7 +73,7 @@ function ableplayer_install() {
+     }
+   }
+ 
+-  $factory = \Drupal::configFactory();
++  /*$factory = \Drupal::configFactory();
+ 
+   $video_entity_form_display = $factory->getEditable('core.entity_form_display.media.video.default');
+   $video_entity_form_display->set('content.field_ableplayer_media_caption.type', 'media_library_widget');
+@@ -82,7 +82,7 @@ function ableplayer_install() {
+   $video_entity_view_display = $factory->getEditable('core.entity_view_display.media.video.default');
+   $video_entity_view_display->set('content.field_media_video_file.type', 'ableplayer_video');
+   $video_entity_view_display->set('content.field_media_video_file.settings', ['controls' => FALSE, 'autoplay' => FALSE, 'loop' => FALSE, 'multiple_file_display_type' => 'tags']);
+-  $video_entity_view_display->save();
++  $video_entity_view_display->save();*/
+ }
+ 
+ /**

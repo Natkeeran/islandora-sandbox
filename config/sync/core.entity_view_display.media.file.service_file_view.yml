@@ -1,0 +1,35 @@
+uuid: ca4d662f-04ac-4191-86f4-0b7ee4263cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.service_file_view
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_use
+    - media.type.file
+  module:
+    - file
+_core:
+  default_config_hash: vG_b7Xpt72vrCSi6pDCJvfE-guw_4Ed69jrb6GrEmsA
+id: media.file.service_file_view
+targetEntityType: media
+bundle: file
+mode: service_file_view
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

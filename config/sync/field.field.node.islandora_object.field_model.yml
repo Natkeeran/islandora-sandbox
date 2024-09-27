@@ -1,4 +1,4 @@
-uuid: cf2b7464-f50a-4c13-97f6-c59fd5a437dd
+uuid: a66bf538-4229-4391-ba59-b093651bfeee
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - field.storage.node.field_model
     - node.type.islandora_object
     - taxonomy.vocabulary.islandora_models
-  enforced:
-    module:
-      - islandora_defaults
+  enforced: {  }
 _core:
   default_config_hash: T8b37Vjp-fwzxYT0ebD4CZEIvVM1NmZkK2bStnHYskw
 id: node.islandora_object.field_model

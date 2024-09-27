@@ -1,10 +1,12 @@
-uuid: 717a6534-e73d-4d75-a149-6268b58abc0d
+uuid: 7c9e2385-8ba5-45e8-a668-289322fd353c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_oclc_number
     - node.type.islandora_object
+_core:
+  default_config_hash: L5TpERw6bv-Mi5pyVW6m0-RswP8tyeaOy4C2UXkuNEQ
 id: node.islandora_object.field_oclc_number
 field_name: field_oclc_number
 entity_type: node

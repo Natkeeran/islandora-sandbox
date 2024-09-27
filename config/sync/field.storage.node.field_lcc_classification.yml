@@ -1,21 +1,24 @@
-uuid: e0ac3b00-a366-4278-b859-88331b9df041
+uuid: 4ba6c902-f107-4b5e-99d4-0b2f8fc949fc
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
     - node
+  enforced: {  }
 third_party_settings:
   field_permissions:
     permission_type: public
+_core:
+  default_config_hash: BHw6f6mdwEQx2weFliha5Yffo1Ft1GkH07rknj2Wwss
 id: node.field_lcc_classification
 field_name: field_lcc_classification
 entity_type: node
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: -1

@@ -1,19 +1,19 @@
-uuid: c2e64608-05f5-4ce1-b50b-c649951c2985
+uuid: dd48dedd-0a90-4097-a4b1-179c151fcdb6
 langcode: en
 status: true
 dependencies:
   module:
     - media
 _core:
-  default_config_hash: SJgxR5XWOesQbEKqp8VgInPyJjCFU_t2pi7UzYB78xg
+  default_config_hash: cNf_852Dq-fNnSaMI4LxL-J6N7bLkHuDbD9EUqOn4_U
 id: media.field_media_oembed_video
 field_name: field_media_oembed_video
 entity_type: media
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

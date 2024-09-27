@@ -1,0 +1,25 @@
+uuid: d39e3104-04f4-4af2-954d-a5a5fe5fedd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibit_weight
+    - node.type.islandora_object
+_core:
+  default_config_hash: U6bh4iF6xwleeYtwo-VffXO7A7j-uFnQKlTopxzTFFU
+id: node.islandora_object.field_exhibit_weight
+field_name: field_exhibit_weight
+entity_type: node
+bundle: islandora_object
+label: 'Exhibit Weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

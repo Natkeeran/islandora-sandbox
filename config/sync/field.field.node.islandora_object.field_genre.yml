@@ -1,11 +1,13 @@
-uuid: 13d85a32-cc8e-4cab-b918-fa2416d282d0
+uuid: c864d087-22d0-4115-a591-0211dd413d7b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_genre
     - node.type.islandora_object
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.genre
+_core:
+  default_config_hash: UeA1xO60n4IUm1gkGhviPBov01bprJKIAOKp610yTD8
 id: node.islandora_object.field_genre
 field_name: field_genre
 entity_type: node
@@ -20,7 +22,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      genre: genre
     sort:
       field: name
       direction: asc

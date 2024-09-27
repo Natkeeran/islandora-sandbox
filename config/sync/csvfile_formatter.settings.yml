@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: Im0ItYL7_2ZnAg2kbZ9o9FLxR2SC8aY-Q13iAKkcfHk
+dataTableSettings:
+  autoWidth: 1
+  deferRender: 0
+  info: 0
+  lengthChange: 0
+  ordering: 1
+  paging: 1
+  processing: 1
+  searching: 1
+  stateSave: 0
+  scrollX: '-1'
+  scrollY: '-1'
+  pageLength: 10

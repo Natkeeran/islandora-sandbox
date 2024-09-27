@@ -1,0 +1,25 @@
+uuid: bec3efa9-4016-45c8-8e26-bfced06da3e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: a2igLMpeUrr02sjfVCNB5sdU_Yq4fqzII8xJ1YCTq5A
+id: node.field_physical_description_note
+field_name: field_physical_description_note
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

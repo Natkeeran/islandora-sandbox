@@ -1,0 +1,49 @@
+uuid: c619807f-b277-4266-91a8-31f388a5d605
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'Mirador Single Image Viewer'
+name: mirador_single_image_viewer
+group: Display
+description: 'Displays the Service File or Original File in Mirador Viewer'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'http://purl.org/coar/resource_type/c_c513,https://projectmirador.org'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      b4acad2a-1a76-4794-8da1-10f4c53d9402:
+        uuid: b4acad2a-1a76-4794-8da1-10f4c53d9402
+        id: 'views_block:media_display-mirador'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_mirador
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: mirador_single_image_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

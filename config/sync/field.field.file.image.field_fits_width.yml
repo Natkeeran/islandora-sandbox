@@ -1,0 +1,21 @@
+uuid: 2793e931-bef4-455c-93df-539a48df5c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_width
+    - file_entity.type.image
+_core:
+  default_config_hash: wc2DfeeHRxc63Ub4PXCe7fgyM1fYk6tEBkE78CpTYck
+id: file.image.field_fits_width
+field_name: field_fits_width
+entity_type: file
+bundle: image
+label: 'Fits Width'
+description: '[{metadata.image.imageWidth}]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

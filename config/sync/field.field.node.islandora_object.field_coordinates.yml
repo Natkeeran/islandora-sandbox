@@ -1,4 +1,4 @@
-uuid: 4ab4df5c-a966-4c9a-91ab-bd8f62ee29b3
+uuid: 3fee73ad-7731-4bfc-a410-642cfa9c97ea
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.islandora_object
   module:
     - geolocation
+_core:
+  default_config_hash: 3LJiS71wStGgGqLOAspiDwwhKqHn5EbM8qOFW0u2JxQ
 id: node.islandora_object.field_coordinates
 field_name: field_coordinates
 entity_type: node

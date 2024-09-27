@@ -1,14 +1,14 @@
-uuid: bb7eb4e7-2214-41e8-a5e7-04ebd6e38b6b
-name: 'Islandora 8'
-mail: admin@example.com
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 494d98a2-8692-4151-9b7d-67e8d1846d82
+name: Default
+mail: webmaster@localhost.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/6
+  front: /collections
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

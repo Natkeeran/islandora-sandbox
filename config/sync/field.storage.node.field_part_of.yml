@@ -1,0 +1,26 @@
+uuid: f83719b3-2c1d-4a50-a6fd-98d4154f6322
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+  enforced: {  }
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 61LqzjSTp9t636qsdK_HpEodCB0qVwGjlQrvk13PQPY
+id: node.field_part_of
+field_name: field_part_of
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

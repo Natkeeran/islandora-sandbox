@@ -1,4 +1,4 @@
-uuid: 7bed601d-bbfd-4fbd-bcba-2687c9519e0a
+uuid: 96125f26-0fd5-40ea-abff-1e97e996a173
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - media.type.audio
     - taxonomy.vocabulary.islandora_media_use
 _core:
-  default_config_hash: ZSdgdnlaHn9SQJzAd4ZgJqQ8uCUA3wf4OQNRxaPL4d0
+  default_config_hash: C5NjuB4IRbBnEpI-vmqLBitkXyR5GqMMjt-Zn39VGyk
 id: media.audio.field_media_use
 field_name: field_media_use
 entity_type: media

@@ -1,0 +1,17 @@
+uuid: 28ca51f7-d051-4dcb-962b-76f2fd2a291c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - node.type.article
+  module:
+    - gnode
+    - node
+id: private-group_node-article
+group_type: private
+content_plugin: 'group_node:article'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

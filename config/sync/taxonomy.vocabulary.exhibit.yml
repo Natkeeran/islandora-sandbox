@@ -1,0 +1,10 @@
+uuid: 7dad1c68-b76f-4564-8d9e-53ecda6a80e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SKjErNNK1fMd2p9tSxlw3AzU4xp9nxeGQ3U3lojVVLU
+name: Exhibit
+vid: exhibit
+description: 'Used for site exhibits'
+weight: 0

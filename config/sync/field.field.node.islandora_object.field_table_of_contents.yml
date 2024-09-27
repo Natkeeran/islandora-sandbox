@@ -1,4 +1,4 @@
-uuid: 53a1e807-c3de-4eba-bdf3-c7403c792c21
+uuid: 8632d969-d71d-48c1-9611-168bd5e36295
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - node.type.islandora_object
   module:
     - text
+_core:
+  default_config_hash: Vvj-VNNZnQWSDJlA3iZFGqCfrFLUnUFezM6iEvN7dZc
 id: node.islandora_object.field_table_of_contents
 field_name: field_table_of_contents
 entity_type: node

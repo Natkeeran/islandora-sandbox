@@ -1,0 +1,49 @@
+uuid: e9014d01-b83d-4830-a1c5-b55d48f223c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.map_resource_type
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: mapresourcetype
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:map_resource_type'
+settings:
+  id: 'facet_block:map_resource_type'
+  label: 'Resource Type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: mapresourcetype
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-map_solr_based_view-page_1: view-map_solr_based_view-page_1

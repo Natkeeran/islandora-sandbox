@@ -1,0 +1,50 @@
+uuid: 181fbe9f-8769-4016-a1d5-ddd3ccf7646e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.term_info
+  module:
+    - context
+    - views
+  theme:
+    - olivero
+id: views_block__term_info_block_1
+theme: olivero
+region: content
+weight: -22
+provider: null
+plugin: 'views_block:term_info-block_1'
+settings:
+  id: 'views_block:term_info-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-advanced_search-page_1: view-advanced_search-page_1

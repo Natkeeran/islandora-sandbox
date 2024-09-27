@@ -1,4 +1,4 @@
-uuid: cf789594-8938-4801-9c8c-c7bc4b873e4e
+uuid: 7059391c-de4f-4198-a2f4-8cd631bfa322
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,12 @@ dependencies:
     - field_permissions
     - node
     - taxonomy
+  enforced: {  }
 third_party_settings:
   field_permissions:
     permission_type: public
+_core:
+  default_config_hash: yUHrYZcsfDl63YlRGuRJ_FAUpxsDviqgu8Fswr-koNk
 id: node.field_temporal_subject
 field_name: field_temporal_subject
 entity_type: node

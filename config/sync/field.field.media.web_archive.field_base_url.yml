@@ -1,0 +1,25 @@
+uuid: 6b71c601-2561-4322-a335-f4a52d19c8e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_base_url
+    - media.type.web_archive
+  module:
+    - link
+_core:
+  default_config_hash: AXiVpa0l2oBUe0whsBOP9lZTBeVY3TTcf7_GZDsdye8
+id: media.web_archive.field_base_url
+field_name: field_base_url
+entity_type: media
+bundle: web_archive
+label: 'Base URL'
+description: "Base URL for player\_to start archive at."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

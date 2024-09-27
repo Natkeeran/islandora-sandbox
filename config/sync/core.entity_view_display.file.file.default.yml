@@ -1,0 +1,129 @@
+uuid: d20182d8-ec2a-4daf-aba4-5731f89bb2bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.file.field_fits
+    - field.field.file.file.field_fits_checksum
+    - field.field.file.file.field_fits_file_format
+    - field.field.file.file.field_fits_file_size
+    - field.field.file.file.field_fits_height
+    - field.field.file.file.field_fits_mimetype
+    - field.field.file.file.field_fits_pronom_puid
+    - field.field.file.file.field_fits_width
+    - file_entity.type.file
+  module:
+    - file_entity
+    - json_field
+id: file.file.default
+targetEntityType: file
+bundle: file
+mode: default
+content:
+  field_fits:
+    type: json
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fits_checksum:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_fits_file_format:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_fits_file_size:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_fits_height:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_fits_mimetype:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_fits_pronom_puid:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_fits_width:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  filemime:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  filename:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  filesize:
+    type: file_size
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  uid:
+    type: uri_link
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  uri:
+    type: file_image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      title: field_image_title_text
+      alt: field_image_alt_text
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

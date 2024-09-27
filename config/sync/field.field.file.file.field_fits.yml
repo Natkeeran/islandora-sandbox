@@ -1,0 +1,21 @@
+uuid: c7187c09-0399-4321-b41c-b8c2353d19c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits
+    - file_entity.type.file
+  module:
+    - json_field
+id: file.file.field_fits
+field_name: field_fits
+entity_type: file
+bundle: file
+label: Fits
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native

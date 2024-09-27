@@ -1,4 +1,4 @@
-uuid: 4b1f03af-4001-4046-837b-c1ec86810bfe
+uuid: 9fdc407b-98c2-46b2-903d-486b0b0fd2a5
 langcode: en
 status: true
 dependencies:
@@ -31,7 +31,7 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: 0
+    auto_create: false
     auto_create_bundle: corporate_body
   rel_types:
     'schema:alumni': Alumni

@@ -1,0 +1,21 @@
+uuid: 7fa28efe-0f1b-4378-87f6-7a4880f8d78a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_file_format
+    - file_entity.type.document
+_core:
+  default_config_hash: zwj83knncPcFtu00yElF7C3XVKDmpjqN6KbBvHv6wyw
+id: file.document.field_fits_file_format
+field_name: field_fits_file_format
+entity_type: file
+bundle: document
+label: 'Fits File Format'
+description: "[{identification.identity[0].\"@attributes\".format}]\r\n[{identification.identity.\"@attributes\".format}]"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

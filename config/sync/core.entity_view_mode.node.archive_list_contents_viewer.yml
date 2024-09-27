@@ -1,0 +1,12 @@
+uuid: e379fff3-f96f-405d-aa06-66c44430e081
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 48Jz_JvdD121wxsKFnqQaBMo42yZeTiBHfTrO1xA9Uw
+id: node.archive_list_contents_viewer
+label: 'Archive List Contents Viewer'
+targetEntityType: node
+cache: true

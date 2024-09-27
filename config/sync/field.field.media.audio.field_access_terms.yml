@@ -1,4 +1,4 @@
-uuid: 0a4fadc8-afcc-4a9b-962d-87904deece66
+uuid: 24e6aed6-8ebf-4996-8280-6f905363da80
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,12 @@ dependencies:
     - field.storage.media.field_access_terms
     - media.type.audio
     - taxonomy.vocabulary.islandora_access
-_core:
-  default_config_hash: zMylfN-fI9CYLY9HkVelF4387LDjMjcxAueAg6LVf8w
 id: media.audio.field_access_terms
 field_name: field_access_terms
 entity_type: media
 bundle: audio
-label: 'Access terms'
-description: 'Terms that define who has access to view/edit this resource.'
+label: 'Access Terms'
+description: ''
 required: false
 translatable: false
 default_value: {  }

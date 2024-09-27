@@ -1,0 +1,96 @@
+uuid: 012e9956-1345-49a9-951f-7938b0b374dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - node
+id: handle_object_metadata_view
+label: 'Handle Object metadata view'
+code: |-
+  article.node--type-islandora-object .node__content {
+      display:none !important;
+  }
+
+  .flex-parent {
+    display: flex;
+  }
+
+  .flex-item {
+    padding: .5em;
+  }
+
+  .flex-item.no-shrink {
+    flex-shrink: 0;
+  }
+
+  #iiif-manifest img { 
+     width: 50px;
+  }
+
+  #block-olivero-content { 
+    display:none !important;
+  }
+
+  .contextual-region {
+    margin: 0 !important;
+    justify-content: left; 
+    margin-bottom: 20px !important;
+  }
+
+  .social-sharing-buttons {
+    justify-content: left;
+  }
+
+  #block-bettersocialsharingbuttons { 
+    margin: 0 !important; 
+  }
+
+  .field--name-field-islandora-object-media .field__label { 
+    display:none !important;
+  }
+
+  #block-olivero-page-title { 
+    margin-bottom: 20px !important;
+  }
+
+  .view-id-item_metadata .view-content table tbody tr {
+        border-bottom: 1px solid #ccc;
+      text-align: left !important;
+  }
+  .view-id-item_metadata .view-content table tbody tr th {
+    width: 20% !important;
+  }
+  .right-col {
+    flex: 1;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .right-col input.form-submit {
+  	margin-top: 0 !important;
+  }
+
+  .field__item iframe { 
+    width: 100% !important;
+  }
+media: all
+preprocess: true
+conditions:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      islandora_object: islandora_object
+contexts: {  }
+conditions_require_all: true

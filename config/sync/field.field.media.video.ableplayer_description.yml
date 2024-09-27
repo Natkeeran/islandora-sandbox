@@ -1,0 +1,27 @@
+uuid: a415e913-7c2f-40f1-8d3a-53642bbaefbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.ableplayer_description
+    - media.type.video
+  module:
+    - file
+id: media.video.ableplayer_description
+field_name: ableplayer_description
+entity_type: media
+bundle: video
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: vtt
+  max_filesize: ''
+  description_field: false
+field_type: file

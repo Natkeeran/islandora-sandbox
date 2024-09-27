@@ -1,10 +1,8 @@
-uuid: b3fa50ec-1f48-40ed-aa3c-bb1e9ebe8ec3
+uuid: 8cfa1dbe-21a6-43a4-964e-c82fb0becf85
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: fhMkpzZtRmlcCaxgIaTH8ESKvylh7PNw7XvH-wlyVL0
 name: 'Islandora Access'
 vid: islandora_access
-description: 'Terms used to limit, restrict or coordinate access'
+description: ''
 weight: 0

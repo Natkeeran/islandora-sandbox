@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: e3vGYyreIdWCpI2ILIqc_JoZuzRL3bl9zjZvnMeuy7I
 default_options:
   fit_to_aspect_ratio: false
   tabIndex: 0
@@ -120,7 +122,5 @@ default_options:
   crossOriginPolicy: false
   ajaxWithCredentials: false
   tileSize: 256
-_core:
-  default_config_hash: SodgIAY6XQHkm493PQ-sLrnBtM2PoP9g8agJU-HM-U8
 iiif_server: 'https://islandora.traefik.me/cantaloupe/iiif/2'
 manifest_view: iiif_manifest

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: L5JWCI2elPSACDHdrzWEaWYduP6w6bjvSEyZ5EY36XY
+server_url: 'http://islandora.traefik.me:8082/bigdata'
+namespace: islandora
+method_of_auth: '-1'
+aqj_max_retries: 5
+aqj_retry_delay: 100
+admin_username: null
+admin_password: null
+advancedqueue_id: triplestore
+content_type_to_index:
+  islandora_object: islandora_object
+  article: '0'
+  page: '0'
+triplestore_indexer: null

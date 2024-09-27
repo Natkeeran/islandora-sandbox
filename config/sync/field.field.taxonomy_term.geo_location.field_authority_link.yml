@@ -1,4 +1,4 @@
-uuid: 0438109d-a506-42a9-9245-3653e1f605f8
+uuid: 2593d556-3bf0-4eab-9a04-6eff00fcf0d2
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - controlled_access_terms
 _core:
-  default_config_hash: XUFzv8sw4FtTc9aJ-fqQkCkZdD0vbQwg6tu5b30sPZI
+  default_config_hash: WQO81CrWZfvdpqoTchaAc2RP8vCWbFMPg72L-kQzwBE
 id: taxonomy_term.geo_location.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
@@ -22,6 +22,7 @@ default_value_callback: ''
 settings:
   authority_sources:
     geonames: GeoNames
+    wiki: Wikidata
     other: Other
   title: 1
   link_type: 16

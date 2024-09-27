@@ -1,33 +1,31 @@
-uuid: 5e87209d-269a-478b-a0ae-59c48b3cc862
+uuid: b87b796f-1557-44da-a46c-3d11103b4b20
 langcode: en
 status: true
 dependencies:
   config:
     - taxonomy.vocabulary.islandora_display
-  enforced:
-    module:
-      - islandora_core_feature
   module:
     - taxonomy
+  enforced: {  }
 _core:
-  default_config_hash: t1JeUjCXsX-ksFr4v18Q0pM2_JhBw2Xz_vlsBMzIAvs
+  default_config_hash: iAwgYTzu8Rcz1KR5JcmgaVnQpXpWZ6R3kpX8zNu0zHs
 id: taxonomy_term.islandora_display
 targetEntityType: taxonomy_term
 bundle: islandora_display
 types:
   - 'schema:Thing'
 fieldMappings:
-  name:
+  changed:
     properties:
-      - 'dcterms:title'
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   description:
     properties:
       - 'dcterms:description'
   field_external_uri:
     properties:
       - 'owl:sameAs'
-  changed:
+  name:
     properties:
-      - 'schema:dateModified'
-    datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+      - 'dcterms:title'

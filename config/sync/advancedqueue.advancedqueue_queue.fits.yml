@@ -1,0 +1,16 @@
+uuid: 90e93daa-a688-4df6-ba74-383ec6ce4aee
+langcode: en
+status: true
+dependencies: {  }
+id: fits
+label: Fits
+backend: database
+backend_configuration:
+  lease_time: 300
+processor: daemon
+processing_time: 90
+locked: false
+threshold: {  }
+type: 2
+limit: 7
+state: success

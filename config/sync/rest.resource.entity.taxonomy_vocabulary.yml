@@ -1,0 +1,22 @@
+uuid: 86ee67cc-fdac-4fde-b9f2-b82a199ef1ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - jsonld
+    - serialization
+    - taxonomy
+    - user
+id: entity.taxonomy_vocabulary
+plugin_id: 'entity:taxonomy_vocabulary'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - jsonld
+    - json
+  authentication:
+    - basic_auth
+    - cookie

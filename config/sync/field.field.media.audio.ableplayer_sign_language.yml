@@ -1,0 +1,27 @@
+uuid: b67876e6-9771-4022-9236-109abcdbdf8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.ableplayer_sign_language
+    - media.type.audio
+  module:
+    - file
+id: media.audio.ableplayer_sign_language
+field_name: ableplayer_sign_language
+entity_type: media
+bundle: audio
+label: 'Sign Language Video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: ''
+  description_field: false
+field_type: file

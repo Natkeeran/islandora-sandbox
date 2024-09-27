@@ -1,4 +1,4 @@
-uuid: 8351d7f0-04b1-4fc9-994c-9c7ecd6a1296
+uuid: 89f0e557-922b-41f2-89d0-4007ae116d5c
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: islandora_display
 label: 'External URI'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,4 +1,4 @@
-uuid: 7c7cce61-6f09-4000-802a-936bb7b53454
+uuid: fffe3ea5-3d9a-4c08-8e36-aeb947ecc9ba
 langcode: en
 status: true
 dependencies:
@@ -24,59 +24,58 @@ content:
   description:
     type: text_textarea
     weight: 7
+    region: content
     settings:
       rows: 9
       placeholder: ''
     third_party_settings: {  }
-    region: content
   field_authority_link:
+    type: authority_link_default
     weight: 3
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: authority_link_default
-    region: content
   field_cat_date_begin:
+    type: edtf_default
     weight: 4
+    region: content
     settings:
       strict_dates: false
       intervals: false
     third_party_settings: {  }
-    type: edtf_default
-    region: content
   field_cat_date_end:
+    type: edtf_default
     weight: 5
+    region: content
     settings:
       strict_dates: false
       intervals: false
     third_party_settings: {  }
-    type: edtf_default
-    region: content
   field_corp_alt_name:
+    type: string_textarea
     weight: 6
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_relationships:
+    type: typed_relation_default
     weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
-      size: '60'
+      size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: typed_relation_default
-    region: content
   field_type:
+    type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -100,14 +99,14 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

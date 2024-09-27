@@ -1,12 +1,9 @@
-uuid: 91c3f76f-64f1-41d9-9ec3-170238449174
+uuid: c2c7007c-7cd0-4b31-9476-21d4e5093f70
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
+dependencies: {  }
 _core:
-  default_config_hash: Jg-bFokbirOXpVVVwgO6g8YzovmQktHR3H5AvAOtJIM
+  default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
 id: image
 label: Image
 description: 'Use local images for reusable media.'
@@ -17,7 +14,3 @@ source_configuration:
   source_field: field_media_image
 field_map:
   name: name
-  mimetype: field_mime_type
-  filesize: field_file_size
-  width: field_width
-  height: field_height

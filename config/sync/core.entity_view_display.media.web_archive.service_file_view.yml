@@ -1,0 +1,52 @@
+uuid: 99e526d3-4cbe-4cbd-9ec9-9bdcb4cf6597
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.service_file_view
+    - field.field.media.web_archive.field_access_terms
+    - field.field.media.web_archive.field_base_url
+    - field.field.media.web_archive.field_media_file
+    - field.field.media.web_archive.field_media_use
+    - media.type.web_archive
+  module:
+    - link
+    - replaywebpage
+_core:
+  default_config_hash: cB6n8xyBo0dKtsrKBr5mamkI2MKQMdKcypfI__OIzAg
+id: media.web_archive.service_file_view
+targetEntityType: media
+bundle: web_archive
+mode: service_file_view
+content:
+  field_base_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_file:
+    type: replaywebpage_formatter
+    label: visually_hidden
+    settings:
+      max_width: '0'
+      max_height: '600'
+      no_sandbox: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

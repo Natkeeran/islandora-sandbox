@@ -1,4 +1,4 @@
-uuid: e554fa44-427e-41e0-abc9-0b958fbea53c
+uuid: 0c1399dd-9179-4194-9d37-46ef605dd39f
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
-    bundle_settings:
-      untranslatable_fields_hide: '0'
 _core:
   default_config_hash: YcNy7Z5RBapXnKgiaqJ7xiBiTJghE8ygbn1VpF2ywQE
 id: taxonomy_term.islandora_models

@@ -1,0 +1,21 @@
+uuid: cd6ece55-c226-4db9-9563-9208792941a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_archival_item
+    - node.type.islandora_object
+_core:
+  default_config_hash: NrVu1pkSZGAjMQMWYLlQo4NWLTP__-JVTu4f2BAne7Y
+id: node.islandora_object.field_related_archival_item
+field_name: field_related_archival_item
+entity_type: node
+bundle: islandora_object
+label: 'Related Archival Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

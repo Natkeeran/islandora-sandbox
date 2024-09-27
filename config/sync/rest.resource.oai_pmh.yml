@@ -1,19 +1,22 @@
-uuid: d7a645f4-c58a-4d21-8888-b212e8b76aca
+uuid: 2758f53c-2d24-45e5-b846-69193a42f52b
 langcode: en
 status: true
 dependencies:
   module:
+    - basic_auth
     - rest_oai_pmh
     - user
 _core:
-  default_config_hash: 1werNsZvmZFdkHbTR_WjYMnPvjKwv1ICU8acCpWURO0
+  default_config_hash: UJ3cyGntgA2ROifjz9irCpqjdJenMb_2rt8a_IUNk2c
 id: oai_pmh
 plugin_id: oai_pmh
 granularity: resource
 configuration:
   methods:
     - GET
+    - POST
   formats:
     - oai_dc
   authentication:
+    - basic_auth
     - cookie
