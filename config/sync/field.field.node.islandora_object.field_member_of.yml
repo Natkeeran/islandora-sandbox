@@ -1,13 +1,11 @@
-uuid: 525757bd-f771-4606-a4ef-6bf8b98c7e5e
+uuid: 6c1dd1c2-efd5-4c10-99c5-c335c341c1d8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_member_of
     - node.type.islandora_object
-  enforced:
-    module:
-      - islandora_defaults
+  enforced: {  }
 _core:
   default_config_hash: v20YaVtVj46zHNe2jXTgkFAVVLS2UcyzL9Pw1ng9038
 id: node.islandora_object.field_member_of
@@ -22,11 +20,5 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:node'
-  handler_settings:
-    target_bundles:
-      islandora_object: islandora_object
-    sort:
-      field: _none
-    auto_create: false
-    auto_create_bundle: ''
+  handler_settings: {  }
 field_type: entity_reference

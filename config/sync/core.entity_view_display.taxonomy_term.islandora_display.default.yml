@@ -1,4 +1,4 @@
-uuid: 35494635-1f34-43e4-b2e8-8e76bd59eb58
+uuid: f6f05baa-ba6b-470c-b2cb-32d98d85dcd1
 langcode: en
 status: true
 dependencies:
@@ -8,22 +8,23 @@ dependencies:
   module:
     - link
     - text
+  enforced: {  }
 _core:
-  default_config_hash: pCLXyfeM4YAzdP2UDvOoybTAd33kS8HXnQc5wqAusOk
+  default_config_hash: 1sTCYRJrfHsXgflRgYs1D-A418n_osJiijp2w00liC0
 id: taxonomy_term.islandora_display.default
 targetEntityType: taxonomy_term
 bundle: islandora_display
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_external_uri:
-    weight: 1
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -32,7 +33,8 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

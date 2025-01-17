@@ -1,0 +1,16 @@
+uuid: 8e08f1eb-36b0-47c4-8729-0a6fa6d8e116
+langcode: en
+status: true
+dependencies: {  }
+id: ocr_extract_text
+label: 'OCR - Extract Text'
+backend: database
+backend_configuration:
+  lease_time: 300
+processor: daemon
+processing_time: 0
+locked: false
+threshold: {  }
+type: 2
+limit: 7
+state: success

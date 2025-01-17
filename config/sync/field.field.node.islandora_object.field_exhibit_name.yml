@@ -1,0 +1,31 @@
+uuid: 0b8a9f56-b078-4541-a73e-fbafe6bcb534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibit_name
+    - node.type.islandora_object
+    - taxonomy.vocabulary.exhibit
+_core:
+  default_config_hash: kyTDu5k6lPQVNxGMsgvpVfJG4dhjqVeZMAuGjFA6jpY
+id: node.islandora_object.field_exhibit_name
+field_name: field_exhibit_name
+entity_type: node
+bundle: islandora_object
+label: 'Exhibit Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      exhibit: exhibit
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

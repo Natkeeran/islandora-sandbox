@@ -1,0 +1,25 @@
+uuid: 9fda2952-216e-44b3-b0c4-a5c81745248c
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+    - json_field
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: eHUhhlZLFUKIcEsjX4dfdJ7tOvYphdjsNbZ2k5plLzE
+id: file.field_fits
+field_name: field_fits
+entity_type: file
+type: json_native
+settings: {  }
+module: json_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

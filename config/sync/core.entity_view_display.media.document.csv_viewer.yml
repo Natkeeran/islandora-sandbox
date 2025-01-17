@@ -1,0 +1,47 @@
+uuid: 21f8b319-0ca7-4a3b-83c9-42cd676fb20c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.csv_viewer
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_media_use
+    - media.type.document
+  module:
+    - csvfile_formatter
+_core:
+  default_config_hash: a3-8-dprX1-b45bc-BGZ2eNFr219KvMpB06ld6E1R48
+id: media.document.csv_viewer
+targetEntityType: media
+bundle: document
+mode: csv_viewer
+content:
+  field_media_document:
+    type: csvfile_formatter
+    label: visually_hidden
+    settings:
+      csvfile_formatter_has_header: '1'
+      csvfile_formatter_separator: ','
+      csvfile_formatter_enclosure: '"'
+      csvfile_formatter_escape: \
+      csvfile_formatter_table_class: ''
+      csvfile_formatter_header_class: ''
+      csvfile_formatter_row_class: ''
+      csvfile_formatter_utf8_process: '1'
+      csvfile_formatter_sticky_headers: '1'
+      csvfile_formatter_use_datatables: '1'
+      csvfile_formatter_download_link: 0
+      csvfile_formatter_download_link_after_table: 0
+      csvfile_formatter_smart_urls: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

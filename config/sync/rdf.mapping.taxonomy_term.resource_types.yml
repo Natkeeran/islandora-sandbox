@@ -1,4 +1,4 @@
-uuid: 19f61e36-6a80-483b-91a3-8347994a6d26
+uuid: 399851a0-9201-467a-af8f-8944863e96be
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - taxonomy
 _core:
-  default_config_hash: Ml80o-0hdfcmQD2qRqnFgGCBbbGJLXbUYyTwd8-oZl8
+  default_config_hash: 9YdFrLtrIqqP52kDzBPtdXh3GBmKZUo1ZkATqePeAzU
 id: taxonomy_term.resource_types
 targetEntityType: taxonomy_term
 bundle: resource_types

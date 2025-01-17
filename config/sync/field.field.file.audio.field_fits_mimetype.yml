@@ -1,0 +1,21 @@
+uuid: f7047a67-d71b-449c-bc4d-4527d076ad97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_mimetype
+    - file_entity.type.audio
+_core:
+  default_config_hash: '-h7OoVX6qA5pxZCLEjdoSnqqv7J7UZnwaRfhs2bf1Nk'
+id: file.audio.field_fits_mimetype
+field_name: field_fits_mimetype
+entity_type: file
+bundle: audio
+label: 'Fits Mimetype'
+description: "[{identification.identity[0].\"@attributes\".mimetype}]\r\n[{identification.identity.\"@attributes\".mimetype}]"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

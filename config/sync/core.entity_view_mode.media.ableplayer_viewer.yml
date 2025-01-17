@@ -1,0 +1,12 @@
+uuid: 942cfc58-3747-430a-adab-1769c45114d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: cUOgK91w1L1z6nBgITWrD019s9Yd0QNKJ2Qp4OzLC1o
+id: media.ableplayer_viewer
+label: 'AblePlayer Viewer'
+targetEntityType: media
+cache: true

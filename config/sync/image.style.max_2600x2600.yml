@@ -1,4 +1,4 @@
-uuid: 4225e5ee-7bd1-4455-b8e7-e878c2bccc7e
+uuid: 19bbffa3-3071-445d-a184-98a6f2077086
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - responsive_image
 _core:
-  default_config_hash: M-7xzqSFQjuAiL0BP9rHC3DbUi2HnaoD538wlFWsoc4
+  default_config_hash: H3gjFlhgZXCVkzP_u0Nzo3HGVu2JtYEEoD4U6fUO6D0
 name: max_2600x2600
 label: 'Max 2600x2600'
 effects:

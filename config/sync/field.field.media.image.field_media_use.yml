@@ -1,4 +1,4 @@
-uuid: 70094387-907c-4958-bed6-f237ef6d89b9
+uuid: b482c20e-f250-4997-8a52-d5265a531cf0
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - media.type.image
     - taxonomy.vocabulary.islandora_media_use
 _core:
-  default_config_hash: czUe39uQUc4HK-JU_cy-dPIMCfNQJdvd-ln8rRNySEs
+  default_config_hash: bfstL81O8B-mDI8L3ueHM8dLjsJt7rTvPJRpEVXXSQ8
 id: media.image.field_media_use
 field_name: field_media_use
 entity_type: media

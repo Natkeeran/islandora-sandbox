@@ -1,0 +1,12 @@
+uuid: 5b94c997-475f-4bd7-b4ed-2be8712b891f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: mIUNzLsXCNTx01c8ouf1KE992RPOb0zuWSbyYBvUeAI
+id: node.ableplayer_viewer
+label: 'AblePlayer Viewer'
+targetEntityType: node
+cache: true

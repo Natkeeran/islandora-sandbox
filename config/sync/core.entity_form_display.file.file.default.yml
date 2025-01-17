@@ -1,0 +1,103 @@
+uuid: b13d09a1-833a-483e-b2e5-a4e1b74b70b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.file.field_fits
+    - field.field.file.file.field_fits_checksum
+    - field.field.file.file.field_fits_file_format
+    - field.field.file.file.field_fits_file_size
+    - field.field.file.file.field_fits_height
+    - field.field.file.file.field_fits_mimetype
+    - field.field.file.file.field_fits_pronom_puid
+    - field.field.file.file.field_fits_width
+    - file_entity.type.file
+  module:
+    - json_field
+id: file.file.default
+targetEntityType: file
+bundle: file
+mode: default
+content:
+  field_fits:
+    type: json_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_checksum:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_file_format:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_file_size:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_height:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_mimetype:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_pronom_puid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fits_width:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  filename:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

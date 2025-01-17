@@ -1,10 +1,12 @@
-uuid: 00cbc166-7cab-4a3b-9e00-47d7e92b630e
+uuid: 46de7a3b-2062-484d-b6d8-49cffe3ec2ef
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_weight
     - node.type.islandora_object
+_core:
+  default_config_hash: DZAfUbF33p1aTcEDcML73eGxwgBijP4h5Y7s10dAu-w
 id: node.islandora_object.field_weight
 field_name: field_weight
 entity_type: node

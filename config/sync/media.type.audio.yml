@@ -1,12 +1,9 @@
-uuid: f80f2163-70cf-46f3-896d-3355122343bd
+uuid: 39587afb-fede-4697-90b8-05707ad035de
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
+dependencies: {  }
 _core:
-  default_config_hash: sbIa2zpnTVgbua7YWzHznwc1oLctfWddYdH2pQsUprc
+  default_config_hash: eJw8n6Tk2tO3ZysuEeGR1gZa1yRffaZzR4t0Q7iNurs
 id: audio
 label: Audio
 description: 'A locally hosted audio file.'
@@ -17,5 +14,3 @@ source_configuration:
   source_field: field_media_audio_file
 field_map:
   name: name
-  mimetype: field_mime_type
-  filesize: field_file_size

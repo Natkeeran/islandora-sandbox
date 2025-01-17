@@ -1,0 +1,12 @@
+uuid: ee30e275-7341-493a-a765-be1c3a5d780d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: hXVo-plT_P7uaAJ4vDD43kRJ4BBgK4q2EoAsbJ722P4
+id: node.book_viewer
+label: 'Book Viewer'
+targetEntityType: node
+cache: true

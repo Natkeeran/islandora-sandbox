@@ -1,0 +1,15 @@
+uuid: 8252c15a-7bde-43f2-af95-5d27755a88ca
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: te3GtGw4S5gwoyUpifnmfXjsxVnf1QC6fKXyd4Y2UOM
+id: web_archive
+label: 'Web Archive'
+description: 'A web archive file.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

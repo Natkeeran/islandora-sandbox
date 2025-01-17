@@ -1,0 +1,13 @@
+uuid: 418af245-5807-475c-99e4-f939e186e6f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - fits
+_core:
+  default_config_hash: JeLeaDc_hfqa6cuWKaPH-wMMzhPVZRvqdnaAaZUjU5o
+id: fits_action
+label: 'FITS - Generate and Extract Technical metadata for File'
+type: file
+plugin: fits_action
+configuration: {  }

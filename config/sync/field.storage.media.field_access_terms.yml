@@ -1,4 +1,4 @@
-uuid: 753d1afd-08c8-43f1-8019-217cb9d97646
+uuid: 6191a0ff-2db9-475f-ac11-8ed8d61b5eb3
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - taxonomy
 third_party_settings:
   field_permissions:
-    permission_type: private
-_core:
-  default_config_hash: wJ27ZPLCi9CKnGI4gwKjMBuAAtXPgxaJoiecuALirdY
+    permission_type: public
 id: media.field_access_terms
 field_name: field_access_terms
 entity_type: media

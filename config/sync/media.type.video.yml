@@ -1,12 +1,9 @@
-uuid: 1074591e-c4df-4cc4-b53e-7b60e30cd162
+uuid: 42417828-38a3-4a25-9661-c5123ef4ea8e
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
+dependencies: {  }
 _core:
-  default_config_hash: xqDuJpAogI0nFediYWUqFlZod52aDosc-5nsbgPFbTA
+  default_config_hash: hzgvcRgZHltqWf8hBmttoWh95tCJoPL25lPq9YSIRsY
 id: video
 label: Video
 description: 'A locally hosted video file.'
@@ -17,5 +14,3 @@ source_configuration:
   source_field: field_media_video_file
 field_map:
   name: name
-  mimetype: field_mime_type
-  filesize: field_file_size

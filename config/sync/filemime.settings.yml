@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: IiPYl8LJMkA1uteOJQA2QtlVZkLzKh9hRHRKKRCb8mU
+file: ''
+types: |-
+
+  image/jp2 jp2
+  application/gzip warc
+  application/gzip wacz
+  application/vnd.apple.mpegurl m3u8
+  application/json json
+  text/x-gettext-translation po

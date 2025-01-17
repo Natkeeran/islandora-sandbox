@@ -1,0 +1,49 @@
+uuid: ca026c78-7727-42ab-b353-97afe3c2d299
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'Ableplayer Viewer'
+name: ableplayer_viewer
+group: Display
+description: 'Displays the Service File or Original File in Ableplayer view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'https://ableplayer.github.io/ableplayer'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      bd14e5db-2185-4902-9b13-6d4244059071:
+        uuid: bd14e5db-2185-4902-9b13-6d4244059071
+        id: 'views_block:media_display-ableplayer'
+        label: ''
+        provider: views
+        label_display: visible
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_ableplayer
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: ableplayer_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

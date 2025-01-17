@@ -1,24 +1,21 @@
-uuid: 2fe09e45-388b-4441-bd51-3d37ec0b71ae
+uuid: 004f51bc-53fd-4c01-87c1-318d489c7f0c
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
   module:
     - file
     - media
 _core:
-  default_config_hash: yR_E-Jhw3fMBrZ0CUXvQs-SO-wzQGFtpa0ELtS3J_U0
+  default_config_hash: z5mgbn1PIVZ5TNMByBmivqo_u3Rdk58UIzpyN4ypTeM
 id: media.field_media_video_file
 field_name: field_media_video_file
 entity_type: media
 type: file
 settings:
+  target_type: file
   display_field: false
   display_default: false
-  uri_scheme: fedora
-  target_type: file
+  uri_scheme: private
 module: file
 locked: false
 cardinality: 1

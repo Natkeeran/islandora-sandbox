@@ -1,0 +1,61 @@
+uuid: 498e2d59-c485-415a-9774-0aa3963da718
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newspaper
+  module:
+    - context
+    - node
+    - term_condition
+    - views
+  theme:
+    - olivero
+id: views_block__newspaper_block_1
+theme: olivero
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:newspaper-block_1'
+settings:
+  id: 'views_block:newspaper-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  term:
+    id: term
+    tid:
+      -
+        target_id: '19'
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      islandora_object: islandora_object

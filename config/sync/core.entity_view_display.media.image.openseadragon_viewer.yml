@@ -1,0 +1,37 @@
+uuid: a28f00e4-1108-4156-a1dc-5c7827c6602b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.openseadragon_viewer
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_use
+    - field.field.media.image.field_ocr
+    - media.type.image
+  module:
+    - openseadragon
+  enforced: {  }
+_core:
+  default_config_hash: derPaMlMbyBakRv4puJmxp8Mb5N3l4h9228zvMzarJA
+id: media.image.openseadragon_viewer
+targetEntityType: media
+bundle: image
+mode: openseadragon_viewer
+content:
+  field_media_image:
+    type: openseadragon_image
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  field_ocr: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

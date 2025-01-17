@@ -1,0 +1,42 @@
+uuid: f8710796-7e99-4b54-82b1-120891d2ff6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.web_archive.field_access_terms
+    - field.field.media.web_archive.field_base_url
+    - field.field.media.web_archive.field_media_file
+    - field.field.media.web_archive.field_media_use
+    - media.type.web_archive
+  module:
+    - file
+id: media.web_archive.default
+targetEntityType: media
+bundle: web_archive
+mode: default
+content:
+  field_access_terms:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_base_url: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

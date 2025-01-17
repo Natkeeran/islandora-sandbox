@@ -1,15 +1,13 @@
-uuid: 9e272d08-637e-4716-ba4c-c843a44e96e6
+uuid: d7f0d626-3249-4b3e-af1e-ef88ff65976d
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
   module:
     - link
     - taxonomy
+  enforced: {  }
 _core:
-  default_config_hash: bOWBQIQagYnQFn4C9S7lRfypHE3qud1D_JIvATUkN4U
+  default_config_hash: QMNl9EU_38XZcCiUpiTifMqj8UZf1OnytDe2hmPIDiM
 id: taxonomy_term.field_external_uri
 field_name: field_external_uri
 entity_type: taxonomy_term

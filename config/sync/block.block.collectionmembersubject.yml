@@ -1,0 +1,44 @@
+uuid: af800fca-130b-483d-8bde-29604d86a610
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.collection_member_subject
+  module:
+    - context
+    - facets
+  theme:
+    - olivero
+id: collectionmembersubject
+theme: olivero
+region: sidebar
+weight: -1
+provider: null
+plugin: 'facet_block:collection_member_subject'
+settings:
+  id: 'facet_block:collection_member_subject'
+  label: 'Collection Member: Subject'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: collectionmembersubject
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: collection
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

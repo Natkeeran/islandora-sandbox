@@ -1,21 +1,16 @@
-uuid: a70f7098-6a0b-47e5-8c63-f7df15c56dbb
+uuid: 7fb12d8e-48a4-4224-bedf-1a6296e04eb2
 langcode: en
 status: true
-dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
+dependencies: {  }
 _core:
-  default_config_hash: Bbqs548topJBjmN7VGStPCuGeZesU--oawavZgrYd90
+  default_config_hash: hlOFmQWNxW8ZXjRQJH-gvaekDlvkN1Bai0TeKYI7qRA
 id: file
 label: File
-description: 'Use local files for reusable media.'
+description: 'Files that do not fit into other types listed here.'
 source: file
 queue_thumbnail_downloads: false
-new_revision: true
+new_revision: false
 source_configuration:
   source_field: field_media_file
 field_map:
   name: name
-  mimetype: field_mime_type
-  filesize: field_file_size

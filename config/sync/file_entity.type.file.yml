@@ -1,0 +1,11 @@
+uuid: ea3c96aa-dd85-4819-b36d-5460d44aafcf
+langcode: en
+status: true
+dependencies: {  }
+id: file
+label: File
+description: 'Files that do not fit into other types listed here.'
+mimetypes:
+  - application/zip
+  - application/gzip
+  - application/json

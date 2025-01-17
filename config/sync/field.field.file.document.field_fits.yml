@@ -1,0 +1,23 @@
+uuid: f3a14af4-6978-4036-9674-a4398f2e8045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits
+    - file_entity.type.document
+  module:
+    - json_field
+_core:
+  default_config_hash: XVSwCWf9-_K3yPqRyPzLAu6coaf075TJAtmL3I7Vo9c
+id: file.document.field_fits
+field_name: field_fits
+entity_type: file
+bundle: document
+label: Fits
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: json_native

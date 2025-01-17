@@ -1,0 +1,32 @@
+uuid: b6440d40-47e4-4fc4-afaa-c05711236bef
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+id: add_display_map_link_in_advanced_search_results_pager_block
+label: 'Add Display Map Link in Advanced Search Results Pager block'
+code: |
+  jQuery(window).on('load', function(){
+     current_url = window.location.pathname;
+    jQuery(".pager__display").find('ul').append('<li class="pager__item"><a href="/collection/'+ current_url.split("/")[2] +'/map" class="pager__link" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Map</a></li>');
+    
+    // for olivero theme
+    jQuery(".pager__group").children('ul').eq(1).append('<li class="pager__item"><a href="/collection/'+ current_url.split("/")[2] +'/map" class="pager__link" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Map</a></li>');
+  });
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+contexts: {  }
+conditions_require_all: true

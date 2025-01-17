@@ -1,0 +1,73 @@
+uuid: dc96a272-b361-49e0-b731-46a05011294c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.able_player_caption.ableplayer_caption
+    - field.field.media.able_player_caption.field_access_terms
+    - image.style.thumbnail
+    - media.type.able_player_caption
+  module:
+    - file
+    - image
+    - user
+id: media.able_player_caption.default
+targetEntityType: media
+bundle: able_player_caption
+mode: default
+content:
+  ableplayer_caption:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_access_terms:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 2941f710-3f23-4bdf-ab96-193ef75fd173
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.internet_media_type
+  module:
+    - text
+_core:
+  default_config_hash: QBPOybiqT8SXNr-QYg-LqIVBkhVOPqMOf6obysdxXIs
+id: taxonomy_term.internet_media_type.default
+targetEntityType: taxonomy_term
+bundle: internet_media_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,4 +1,4 @@
-uuid: cedc9bc5-d8e9-4b84-8c70-79b5cc281379
+uuid: 742a8e4b-0c04-4844-93bc-ececc74c23be
 langcode: en
 status: true
 dependencies:
@@ -9,41 +9,23 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  display_media_entity_view_1:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  display_media_entity_view_2:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  display_media_service_file:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  display_media_thumbnail:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
     region: content
   links:
     weight: 101
     region: content
 hidden:
+  field_access_terms: true
   langcode: true
+  search_api_excerpt: true

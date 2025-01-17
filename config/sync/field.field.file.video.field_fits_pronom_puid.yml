@@ -1,0 +1,31 @@
+uuid: 4787608e-b02b-41c4-9108-879e6b4c482b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_pronom_puid
+    - file_entity.type.video
+    - taxonomy.vocabulary.pronom
+_core:
+  default_config_hash: TeWam9Dj57Ek6lN4e97DcjOilHAfCWqDbSldk81URsE
+id: file.video.field_fits_pronom_puid
+field_name: field_fits_pronom_puid
+entity_type: file
+bundle: video
+label: 'Fits PRONOM PUID'
+description: "[{identification.identity.externalIdentifier}]\r\n[{identification.identity[0].externalIdentifier}]"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pronom: pronom
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

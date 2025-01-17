@@ -1,0 +1,41 @@
+uuid: 919ca590-a99f-42c5-bf3e-b1d6e65090c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.thumbnail
+    - field.field.file.document.field_fits
+    - field.field.file.document.field_fits_checksum
+    - field.field.file.document.field_fits_file_format
+    - field.field.file.document.field_fits_file_size
+    - field.field.file.document.field_fits_mimetype
+    - field.field.file.document.field_fits_pronom_puid
+    - file_entity.type.document
+_core:
+  default_config_hash: zlB0VonOjJywsH9sIrMlYt9bIpPdi3QysmBkBUaV1YY
+id: file.document.thumbnail
+targetEntityType: file
+bundle: document
+mode: thumbnail
+content:
+  filename:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_fits: true
+  field_fits_checksum: true
+  field_fits_file_format: true
+  field_fits_file_size: true
+  field_fits_mimetype: true
+  field_fits_pronom_puid: true
+  filemime: true
+  filesize: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true
+  uri: true

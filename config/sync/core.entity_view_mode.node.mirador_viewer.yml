@@ -1,0 +1,12 @@
+uuid: 62ecd989-aa61-4466-bbd2-f907b34bd745
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: tUkKqKNGu0ftlqBZ3VIqWeD2s1enPqts5cNjnK9IFqY
+id: node.mirador_viewer
+label: 'Mirador Viewer'
+targetEntityType: node
+cache: true

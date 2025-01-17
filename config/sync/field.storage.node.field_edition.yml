@@ -1,21 +1,24 @@
-uuid: d5a85c07-5bba-4a91-aec3-4bebb993d3d2
+uuid: 30bee25d-c16c-43a5-91f9-63afac11ac75
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
     - node
+  enforced: {  }
 third_party_settings:
   field_permissions:
     permission_type: public
+_core:
+  default_config_hash: nCUPw5a1HNd5G0Wjk81inhEN4jfuwyy9oyJIz2_kjyg
 id: node.field_edition
 field_name: field_edition
 entity_type: node
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: -1

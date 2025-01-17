@@ -1,4 +1,4 @@
-uuid: 6413128d-5787-4687-8cb8-c4b8c2e2888e
+uuid: 8af06d66-95dc-4b21-917b-37790bf015cf
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - controlled_access_terms
 _core:
-  default_config_hash: rj4uOU6vtMg_DbD4q1p3Kj2bVuOV4Aojif5HGD4m0JQ
+  default_config_hash: MEsjgnLAc-1Wbi8sK1QE8Xdllh2P-cbRcpEiDmxXr3A
 id: taxonomy_term.corporate_body.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
@@ -23,11 +23,14 @@ settings:
   authority_sources:
     cash: 'Canadian Subject Headings'
     lcshac: 'Library of Congress Children''s Subject Headings'
+    lcnaf: 'LC Name Authority File'
     naf: 'NACO Authority File'
     nad: 'NAD / ARK II Name Authority Database'
     nal: 'National Agricultural Library subject headings'
     rvm: 'Répertoire de vedettes-matière'
     ulan: 'Union List of Artist Names'
+    viaf: 'Virtual International Authority File'
+    wiki: Wikidata
     other: Other
   title: 1
   link_type: 16

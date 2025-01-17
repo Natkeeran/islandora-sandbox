@@ -1,0 +1,49 @@
+uuid: b615f29f-1f46-4c23-a85a-9aedcf3cc3c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_display
+  module:
+    - termwithuri_condition
+    - views
+label: 'OpenSeadragon Viewer'
+name: duplicate_of_pdf_js_viewer
+group: Display
+description: 'Displays the Service File or Original File in OpenSeadragon view mode'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_has_term:
+    id: node_has_term
+    logic: and
+    uri: 'http://openseadragon.github.io'
+    negate: 0
+    uuid: 42b55cc6-89be-4f2a-855d-b2963c139692
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    id: blocks
+    uuid: 7f929e10-5815-4d7c-8dce-665ed4f0a664
+    blocks:
+      08c0ab03-09df-48b6-abd5-3917acf37be5:
+        uuid: 08c0ab03-09df-48b6-abd5-3917acf37be5
+        id: 'views_block:media_display-openseadragon'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: content_above
+        weight: '0'
+        custom_id: views_block_media_display_openseadragon
+        theme: olivero
+        css_class: ''
+        unique: 0
+        context_id: duplicate_of_pdf_js_viewer
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

@@ -1,0 +1,21 @@
+uuid: fc85d8e2-1ea3-4cfa-ad06-73a1fef82811
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fits_mimetype
+    - file_entity.type.document
+_core:
+  default_config_hash: wsKVHGRjmtiFfeocQAcQ-stseaXjmrc86T7_DgheCb0
+id: file.document.field_fits_mimetype
+field_name: field_fits_mimetype
+entity_type: file
+bundle: document
+label: 'Fits Mimetype'
+description: "[{identification.identity[0].\"@attributes\".mimetype}]\r\n[{identification.identity.\"@attributes\".mimetype}]"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

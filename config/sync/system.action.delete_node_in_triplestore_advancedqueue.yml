@@ -1,0 +1,13 @@
+uuid: b5d5cc9f-1d63-4672-b610-6ccc6b442152
+langcode: en
+status: true
+dependencies:
+  module:
+    - triplestore_indexer
+_core:
+  default_config_hash: n5g_uKrr4zlqZuQPIKWV_LcDcngWOlNtjvGR1m4at2Y
+id: delete_node_in_triplestore_advancedqueue
+label: 'Delete node in Triplestore (via Advanced Queue)'
+type: node
+plugin: delete_node_in_triplestore_advancedqueue
+configuration: {  }

@@ -1,0 +1,21 @@
+uuid: fa8cc289-6652-4d80-8747-2e45b9da4ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_created_rad
+    - node.type.islandora_object
+_core:
+  default_config_hash: p9T85ZUnIhmtm-qTsun7P5KTT0S0SnNf8aguuXFUusg
+id: node.islandora_object.field_date_created_rad
+field_name: field_date_created_rad
+entity_type: node
+bundle: islandora_object
+label: 'Date Created (RAD)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

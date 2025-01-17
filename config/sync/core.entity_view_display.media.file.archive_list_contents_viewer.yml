@@ -1,0 +1,34 @@
+uuid: 8e8b75f8-7a3c-403d-8e79-a32b27204fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.archive_list_contents_viewer
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_use
+    - media.type.file
+  module:
+    - archive_list_contents
+_core:
+  default_config_hash: 3yPBcBhuzFIHH-Tzj0uO6zT6Mh_Fn_QFk4HYQQo1VZ0
+id: media.file.archive_list_contents_viewer
+targetEntityType: media
+bundle: file
+mode: archive_list_contents_viewer
+content:
+  field_media_file:
+    type: archive_list_contents
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

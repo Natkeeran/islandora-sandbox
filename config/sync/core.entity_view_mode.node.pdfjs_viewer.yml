@@ -1,0 +1,13 @@
+uuid: 059906d0-06ec-426a-abc0-2e73891f96f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced: {  }
+_core:
+  default_config_hash: rU7EYaMqFt_SpSYQuACg9z3spiHhB8Vg0I7Dd7-SbyI
+id: node.pdfjs_viewer
+label: 'PDFjs Viewer'
+targetEntityType: node
+cache: true

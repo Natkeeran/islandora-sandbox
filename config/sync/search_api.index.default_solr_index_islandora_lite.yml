@@ -1,0 +1,556 @@
+uuid: ebf38e54-6d90-4b0f-8b69-4b045893ae5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coordinates
+    - field.storage.node.field_edtf_date_created
+    - field.storage.node.field_member_of
+    - field.storage.node.field_description
+    - field.storage.node.field_genre
+    - field.storage.node.field_geographic_subject
+    - field.storage.node.field_identifier
+    - field.storage.node.field_model
+    - field.storage.node.field_language
+    - field.storage.node.field_linked_agent
+    - field.storage.media.field_media_image
+    - field.storage.node.field_islandora_object_media
+    - field.storage.node.field_part_of
+    - field.storage.node.field_physical_form
+    - field.storage.node.field_resource_type
+    - field.storage.node.field_subject
+    - field.storage.node.field_subjects_name
+    - field.storage.node.field_tags
+    - field.storage.node.field_temporal_subject
+    - field.storage.node.field_weight
+    - field.storage.node.field_edtf_date
+    - field.storage.node.field_edtf_date_issued
+    - search_api.server.default_solr_server
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api_solr
+    - node
+    - user
+    - search_api_location
+    - taxonomy
+    - media
+    - file
+    - search_api
+    - controlled_access_terms
+    - group_solr
+    - islandora_hocr
+    - islandora_object_thumbnail
+    - islandora_search_processor
+    - islandora_site_name
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: regex
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+_core:
+  default_config_hash: JCOGFxJfZRUl5iw1pW2jRZY9YlPl_vRv6HbLShaYXXk
+id: default_solr_index_islandora_lite
+name: 'Default Solr content index for Islandora Lite'
+description: 'Default content index created for Islandora Lite'
+read_only: false
+field_settings:
+  author:
+    label: 'Author name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - node
+        - user
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  content:
+    label: 'HOCR Field » HOCR Content Field'
+    datasource_id: 'entity:node'
+    property_path: 'islandora_hocr_field:content'
+    type: 'solr_text_custom:islandora_hocr'
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  edtf_year:
+    label: 'EDTF Creation Date Year'
+    property_path: edtf_year
+    type: integer
+  field_coordinates:
+    label: Coordinates
+    datasource_id: 'entity:node'
+    property_path: field_coordinates
+    type: location
+    dependencies:
+      config:
+        - field.storage.node.field_coordinates
+  field_descendant_of:
+    label: 'Descendant of'
+    datasource_id: 'entity:node'
+    property_path: field_member_of
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_member_of
+  field_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: text
+    boost: 8.0
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  field_edtf_date:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date
+  field_edtf_date_created:
+    label: 'Year Created'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_created
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_created
+  field_edtf_date_created_1:
+    label: 'Date Created'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_created
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_created
+  field_edtf_date_issued:
+    label: 'Year Issued'
+    datasource_id: 'entity:node'
+    property_path: field_edtf_date_issued
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_edtf_date_issued
+  field_member_of:
+    label: 'Member of'
+    datasource_id: 'entity:node'
+    property_path: field_member_of
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_member_of
+  field_part_of:
+    label: 'Part Of'
+    datasource_id: 'entity:node'
+    property_path: field_part_of
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_part_of
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  field_weight:
+    label: Weight
+    datasource_id: 'entity:node'
+    property_path: field_weight
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_weight
+  fulltext_title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: 13.0
+    dependencies:
+      module:
+        - node
+  genre:
+    label: Genre
+    datasource_id: 'entity:node'
+    property_path: 'field_genre:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_genre
+      module:
+        - taxonomy
+  geographic_subject:
+    label: 'Geographic Subject'
+    datasource_id: 'entity:node'
+    property_path: 'field_geographic_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_geographic_subject
+      module:
+        - taxonomy
+  group_access_control:
+    label: 'Group: Access Control'
+    property_path: search_api_group_access_control
+    type: string
+  identifier:
+    label: Identifier
+    datasource_id: 'entity:node'
+    property_path: field_identifier
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_identifier
+  islandora_model:
+    label: 'Islandora Model'
+    datasource_id: 'entity:node'
+    property_path: 'field_model:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_model
+      module:
+        - taxonomy
+  islandora_object_thumbnail:
+    label: 'Islandora Object Thumbnail'
+    property_path: search_api_islandora_object_thumbnail
+    type: string
+  islandora_site_name:
+    label: 'Islandora Site Name'
+    property_path: search_api_islandora_site_name
+    type: string
+  language:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: 'field_language:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_language
+      module:
+        - taxonomy
+  linked_agent:
+    label: 'Linked Agent'
+    datasource_id: 'entity:node'
+    property_path: 'field_linked_agent:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_linked_agent
+      module:
+        - taxonomy
+  linked_agent_rel_type:
+    label: 'Linked Agent Relator Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_linked_agent:rel_type'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_linked_agent
+  linked_agent_text:
+    label: 'Linked Agen'
+    datasource_id: 'entity:node'
+    property_path: 'field_linked_agent:entity:name'
+    type: text
+    boost: 5.0
+    dependencies:
+      config:
+        - field.storage.node.field_linked_agent
+      module:
+        - taxonomy
+  linked_agent_vid:
+    label: 'Linked Agent Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_linked_agent:entity:vid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_linked_agent
+      module:
+        - taxonomy
+  media_file_alt_text:
+    label: 'Media File Alt Text'
+    datasource_id: 'entity:node'
+    property_path: 'field_islandora_object_media:entity:field_media_image:alt'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_image
+        - field.storage.node.field_islandora_object_media
+      module:
+        - media
+  media_thumbnail_url:
+    label: 'Media Thumbnail'
+    datasource_id: 'entity:node'
+    property_path: 'field_islandora_object_media:entity:thumbnail:entity:uri:url'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_islandora_object_media
+      module:
+        - file
+        - media
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  physical_form:
+    label: 'Physical Form'
+    datasource_id: 'entity:node'
+    property_path: 'field_physical_form:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_physical_form
+      module:
+        - taxonomy
+  rendered_item:
+    label: 'Rendered item'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          article: search_index
+          page: search_index
+  resource_type:
+    label: 'Resource Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
+      module:
+        - taxonomy
+  s_islandora_linked_agent_ann:
+    label: 'Agent By Role: Annotator (ann)'
+    property_path: s_islandora_linked_agent_ann
+    type: string
+  s_islandora_linked_agent_pbl:
+    label: 'Agent By Role: Publisher (pbl)'
+    property_path: s_islandora_linked_agent_pbl
+    type: string
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  sticky:
+    label: 'Sticky at top of lists'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+    dependencies:
+      module:
+        - node
+  subject:
+    label: Subject
+    datasource_id: 'entity:node'
+    property_path: 'field_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subject
+      module:
+        - taxonomy
+  subjects_name:
+    label: 'Subjects (name)'
+    datasource_id: 'entity:node'
+    property_path: 'field_subjects_name:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subjects_name
+      module:
+        - taxonomy
+  subjects_name_vid:
+    label: 'Subjects Name Vocabulary'
+    datasource_id: 'entity:node'
+    property_path: 'field_subjects_name:entity:vid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_subjects_name
+      module:
+        - taxonomy
+  temporal_subject:
+    label: 'Temporal Subject'
+    datasource_id: 'entity:node'
+    property_path: 'field_temporal_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_temporal_subject
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: 'Author ID'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+  aggregated_field:
+    weights:
+      add_properties: 20
+  auto_aggregated_fulltext_field: {  }
+  content_access:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -4
+  custom_value: {  }
+  edtf_year_only:
+    fields:
+      islandora_object|field_edtf_date: islandora_object|field_edtf_date
+      islandora_object|field_edtf_date_created: islandora_object|field_edtf_date_created
+      islandora_object|field_edtf_date_issued: islandora_object|field_edtf_date_issued
+    ignore_undated: 0
+    ignore_open_start: 0
+    open_start_year: '0'
+    ignore_open_end: 0
+    open_end_year: '0'
+  entity_status:
+    weights:
+      preprocess_index: -10
+  entity_type: {  }
+  group_access_control: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_always: false
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
+  html_filter:
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
+    all_fields: false
+    fields:
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      string: 2
+  islandora_hocr_field: {  }
+  islandora_object_thumbnail: {  }
+  islandora_site_name: {  }
+  language_with_fallback: {  }
+  linked_agent_by_type: {  }
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: default_solr_server
+

@@ -1,0 +1,21 @@
+uuid: c4427b2c-9ae6-43ab-87ea-79b24c31e7aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_physical
+    - node.type.islandora_object
+_core:
+  default_config_hash: PrnndlMCeTLrbLsx0Cs6PB9_ml3VVZGHjJbaPVhhFOA
+id: node.islandora_object.field_location_physical
+field_name: field_location_physical
+entity_type: node
+bundle: islandora_object
+label: 'Location (physical)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

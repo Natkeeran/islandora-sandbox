@@ -1,0 +1,12 @@
+uuid: d95059ca-a26c-4d6a-89a0-f788ca435c8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: l1R9LFzeDL7r-PILZV1mZ41kzItXtwPSqmam8kBz_7Y
+id: node.csv_viewer
+label: 'CSV Viewer'
+targetEntityType: node
+cache: true

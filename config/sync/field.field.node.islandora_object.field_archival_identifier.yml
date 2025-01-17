@@ -1,0 +1,21 @@
+uuid: b43b6bb6-9d33-4047-b5b2-faf53dff4ea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archival_identifier
+    - node.type.islandora_object
+_core:
+  default_config_hash: TDU8P3P1E_zuYJx3EAEqU91InCqniAcgtO1jpGp2zoo
+id: node.islandora_object.field_archival_identifier
+field_name: field_archival_identifier
+entity_type: node
+bundle: islandora_object
+label: 'Archival Identifier'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,12 +1,10 @@
-uuid: 1ec8ee8b-b184-4de5-80eb-f8070572d712
+uuid: 8bc257ed-a21d-47ba-888d-1d7ba86e62a7
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - islandora_core_feature
+  enforced: {  }
 _core:
-  default_config_hash: 3ugHR5IP2Kjsq6B6ujB-y88les0uNW5pIUAcw97bMMY
+  default_config_hash: j6r_shNr6A2-dBGRcL51g5vd_6xcIu6pJGI3r-L3PTg
 id: islandora_tags
 class: null
 field_plugin_method: null
@@ -16,18 +14,18 @@ migration_tags:
 migration_group: islandora
 label: 'Tags migration from CSV'
 source:
-  plugin: csv
-  path: modules/contrib/islandora/migrate/tags.csv
   header_row_count: 1
   ids:
     - external_uri
+  path: ../assets/migrate/tags.csv
+  plugin: csv
 process:
-  name: name
-  vid: vid
   description: description
   field_external_uri:
     plugin: urlencode
     source: external_uri
+  name: name
+  vid: vid
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

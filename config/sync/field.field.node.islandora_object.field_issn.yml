@@ -1,0 +1,21 @@
+uuid: 81cf5a62-2d03-4298-9ed1-242f57d7c3e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issn
+    - node.type.islandora_object
+_core:
+  default_config_hash: rYLYQdU8Dw1yRA-Cc6LWxDjFac2Oc_44WNyuVXAg32M
+id: node.islandora_object.field_issn
+field_name: field_issn
+entity_type: node
+bundle: islandora_object
+label: ISSN
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

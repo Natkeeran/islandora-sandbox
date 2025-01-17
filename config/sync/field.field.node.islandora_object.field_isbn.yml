@@ -1,10 +1,12 @@
-uuid: 56616ef5-b088-4dc5-b905-8b4eb1f7b348
+uuid: 621a7841-3de0-441d-8465-ac021b6b2028
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_isbn
     - node.type.islandora_object
+_core:
+  default_config_hash: tV4_LkPhpgBPBxcMsh4hQYhgfWU5N0YTTtzQhT90_Hc
 id: node.islandora_object.field_isbn
 field_name: field_isbn
 entity_type: node

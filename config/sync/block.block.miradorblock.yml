@@ -1,0 +1,53 @@
+uuid: f12dd41f-0003-4ae0-b679-571e6f75c5dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - islandora_mirador
+    - system
+    - term_condition
+  theme:
+    - olivero
+id: miradorblock
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: mirador_block
+settings:
+  id: mirador_block
+  label: 'Mirador block'
+  label_display: visible
+  provider: islandora_mirador
+  iiif_manifest_url: '/node/[node:nid]/book-manifest'
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*/children'
+  term:
+    id: term
+    negate: false
+    context_mapping: {  }
+    term_uuids:
+      - d4527a1b-cea9-4a93-8a2f-7dc67ba43481
